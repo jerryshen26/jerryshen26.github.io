@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 微軟正黑體;
+}
+.area-banner{
+    background: url(../image/IMAG3262~2.jpg) no-repeat 50% 50% ;
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    position: relative;
+}
+
+.bannet-text{
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    text-align: center;
+    top: 10%;
+}
+.bannet-text h3{
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+.bannet-text h4 , p{
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5em
+}
