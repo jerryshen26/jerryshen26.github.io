@@ -1,421 +1,430 @@
 * {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-family: 微軟正黑體;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 微軟正黑體;
 }
-.area-banner {
-  background: url(../image/IMAG3262~2.jpg) no-repeat 50% 50%;
-  width: 100%;
-  height: 1000px;
-  background-size: cover;
-  position: relative;
+
+.typingCursorWhite {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* menu */
+
+.portfolio-menu {
+    position: fixed;
+    width: 25%;
+    min-width: 275px;
+    max-width: 400px;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    overflow: auto;
+    z-index: 2;
+}
+
+.portfolio-list {
+    margin-left: 20%;
+    height: 100%;
+    border-left: 1px solid #202020;
+    padding: 16% 8%;
+    box-sizing: border-box;
+}
+
+.portfolio-content p {
+    border-top: 2px solid #202020;
+    display: table;
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+.portfolio-list ul li {
+    margin-top: 35px;
+    color: rgb(58 58 58 / 70%);
+    transform: scale(1);
+    transition: all 0.05s;
+}
+
+.portfolio-menu .fabb.active {
+    transform: scale(1.35);
+    transform-origin: left;
+    color: #161616;
+    border-top: 2px solid #202020;
+    padding-top: 2px;
+    display: table;
+}
+
+.portfolio-banner-area {
+    background: url(../image/IMAG3262~2.jpg) no-repeat 50% 50%;
+    /* background: url(https://www.lcnet.com.tw/img/home/sq_background-01.png) no-repeat 50% 50%; */
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    position: relative;
 }
 
 .bannet-text {
-  position: absolute;
-  margin: auto;
-  right: 0;
-  left: 0;
-  text-align: center;
-  top: 10%;
-}
-.bannet-text h3 {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-.bannet-text h4,
-.bannet-text p {
-  font-size: 3em;
-  font-weight: bold;
-  line-height: 1.5em;
-}
-/* 關於 */
-.area-about {
-  padding: 75px 100px;
-  display: block;
-  overflow: auto;
-}
-.about-title {
-  width: 25%;
-  float: left;
-}
-.about-title h4 {
-  font-size: 1.8em;
-  text-align: center;
-}
-.about-text {
-  width: 75%;
-  float: left;
-}
-.about-text p {
-  font-size: 1.4em;
-}
-/* 經驗 */
-.area-experience {
-  padding: 75px 100px;
-  display: block;
-  background: #4cccf9;
-  overflow: auto;
-}
-.experience-title {
-  width: 25%;
-  float: left;
-}
-.experience-title h4 {
-  font-size: 1.8em;
-  text-align: center;
-  color: white;
-}
-.experience-text {
-  box-sizing: border-box;
-  width: 75%;
-  float: left;
-  border: 1px solid white;
-  padding: 20px;
-}
-.experience-text p {
-  font-size: 1.4em;
-  color: white;
-}
-.experience-text-company {
-  font-weight: bold;
-}
-.experience-text-company a {
-  color: white;
-}
-.experience-text-year {
-  font-weight: bold;
-}
-/* 技能 */
-.area-skill {
-  padding: 75px 100px;
-  display: block;
-  overflow: auto;
-}
-.skill-title {
-  width: 25%;
-  float: left;
-}
-.skill-title h4 {
-  font-size: 1.8em;
-  text-align: center;
-  color: #4cccf9;
-}
-.skill-text {
-  width: 37.5%;
-  float: left;
-}
-.skill-text .skill-type {
-  font-size: 1.4em;
-  color: #4cccf9;
-}
-.skill-porgressBar-table {
-  width: 100%;
-}
-.skill-porgressBar-table .skill-porgressBar-item {
-  padding: 15px 0;
-}
-.skill-porgressBar-item .item-name {
-  font-weight: bold;
-}
-.skill-porgressBar-table progress {
-  display: inline-block;
-  width: 80%;
-  height: 20px;
-  padding: 15px 0 0 0;
-  background: none;
-  border: 0;
-  border-radius: 15px;
-  text-align: left;
-  position: relative;
-  font-size: 0.8em;
-}
-.skill-porgressBar-table progress::-webkit-progress-bar {
-  height: 15px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #ccc;
-  border-radius: 15px;
-}
-.skill-porgressBar-table progress::-webkit-progress-value {
-  display: inline-block;
-  float: left;
-  height: 15px;
-  margin: 0px -10px 0 0;
-  background: #4cccf9;
-  border-radius: 15px;
-  box-shadow: 0px 0px 6px #777 inset;
-}
-.skill-porgressBar-table progress:after {
-  margin: -26px 0 0 -7px;
-  padding: 0;
-  display: inline-block;
-  float: left;
-  content: attr(value) "%";
-}
-/* 網站作品 */
-.area-websiteWorks {
-  padding: 75px 175px 75px 100px;
-  display: block;
-  background: #e5e5e5;
-  overflow: auto;
-}
-.websiteWorks-title {
-  width: 25%;
-  float: left;
-}
-.websiteWorks-title h4 {
-  font-size: 1.8em;
-  text-align: center;
-  color: black;
-}
-.websiteWorks-title h4::after {
-  border: 2px solid black;
-  content: " ";
-  display: block;
-  width: 100px;
-  margin: 10px auto;
-}
-.websiteWorks-district {
-  width: 75%;
-  float: left;
-}
-.websiteWorks-item {
-  box-sizing: border-box;
-  width: 95%;
-  float: left;
-  padding: 30px;
-  background: white;
-  margin-bottom: 30px;
-}
-.websiteWorks-item p {
-  font-size: 1.4em;
-  color: black;
-}
-.websiteWorks-images {
-  width: 50%;
-  float: left;
-}
-.websiteWorks-images img {
-  width: 100%;
-}
-.websiteWorks-text {
-  width: 50%;
-  float: left;
-  padding: 0 5%;
-  box-sizing: border-box;
-}
-.websiteWorks-text-company {
-  font-weight: bold;
-}
-.websiteWorks-text-company a {
-  color: black;
-}
-.websiteWorks-text-year {
-  font-weight: bold;
-}
-.websiteWorks-item .websiteWorks-text-detail {
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 1.6em;
-}
-/* photo */
-.area-photo {
-  padding: 75px 100px;
-  display: block;
-  overflow: auto;
-}
-.photo-title {
-  display: block;
-  margin-bottom: 30px;
-}
-.photo-title h4 {
-  font-size: 1.8em;
-  text-align: center;
-  color: black;
-}
-.photo-title p {
-  text-align: center;
-  color: black;
-}
-.photo-container {
-  width: 100%;
-}
-.photo-container .photo-block {
-  width: calc(97% / 5);
-  height: 15vw;
-  overflow: hidden;
-  display: inline-block;
-  margin: 15px 0;
-  position: relative;
-}
-.photo-block img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.area-footer {
-  padding: 75px 100px;
-  display: block;
-  overflow: auto;
-  background: #0e0d09;
-}
-.area-footer h4 {
-  color: white;
-  line-height: 60px;
-}
-.area-footer p {
-  color: white;
-}
-@media screen and (max-width: 1280px) and (min-width: 1025px) {
-  /* 關於 */
-  .area-about {
-    padding: 50px 25px;
-  }
-  /* 經驗 */
-  .area-experience {
-    padding: 50px 25px;
-  }
-  /* 技能 */
-  .area-skill {
-    padding: 50px 25px;
-  } /* 網站作品 */
-  .area-websiteWorks {
-    padding: 25px 25px;
-  }
-  /* 圖片 */
-  .area-photo {
-    padding: 50px;
     display: block;
-    overflow: auto;
-  }
+    position: absolute;
+    margin: auto;
+    left: 60%;
+    top: 10%;
 }
 
-@media screen and (max-width: 1024px) {
-  /* 關於 */
-  .area-about {
-    padding: 50px;
-  }
+.bannet-text h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: .05em;
+    /* background: linear-gradient(to right, #ff43d6 0%, #FF6C83 50%, #9073ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    display: table;
+}
 
-  .about-title {
-    width: 100%;
-    float: inherit;
-  }
-  .about-text {
-    width: 100%;
-    float: inherit;
-  }
-  /* 經驗 */
-  .area-experience {
-    padding: 50px;
-  }
-  .experience-title {
-    width: 100%;
-    float: inherit;
-  }
-  .experience-title h4 {
-    font-size: 1.8em;
-    text-align: center;
-    color: white;
-  }
-  .experience-text {
-    width: 100%;
-    float: inherit;
-    margin-top: 20px;
-  }
-  .experience-text p {
-    font-size: 1.4em;
-    color: white;
-  }
-  /* 技能 */
-  .area-skill {
-    padding: 50px;
-  }
-  .skill-title {
-    width: 100%;
-    float: inherit;
-  }
-  .skill-text {
-    width: 100%;
-    float: inherit;
-    margin-top: 20px;
-  }
-  .skill-text .skill-type {
-    font-size: 1.4em;
-    color: #4cccf9;
-  }
-  .skill-porgressBar-table {
-    width: 100%;
-  }
-  .skill-porgressBar-table progress {
-    width: 100%;
-  }
-  /* 網站作品 */
-  .area-websiteWorks {
-    padding: 25px;
-  }
-  .websiteWorks-title {
-    width: 100%;
-    float: inherit;
-  }
-  .websiteWorks-district {
-    width: 100%;
-  }
-  .websiteWorks-images {
-    width: 100%;
-    float: left;
-  }
-  .websiteWorks-text {
-    width: 100%;
-    padding: 0;
-  }
-  .websiteWorks-item {
-    width: 100%;
-  }
-  /* 圖片 */
-  .area-photo {
-    padding: 25px;
-  }
-  .photo-container .photo-block {
-    width: calc(98% / 2);
-    height: 45vw;
-    margin: 5px 0;
-  }
+.bannet-text h4 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5em;
+    letter-spacing: .15em;
+    border-top: 1px solid #111111;
+    margin-top: 15px;
+    display: table;
+}
+
+.bannet-text p {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.portfolio-block p {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.portfolio-develop-area {
+    width: 75%;
+    position: relative;
+    left: 25%;
+    padding: 100px 25px 50px;
+    box-sizing: border-box;
+}
+
+.portfolio-develop-section h4 {
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.portfolio-develop-area h4 {
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.portfolio-develop-cards {
+    position: relative;
+    padding-bottom: 100px;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+
+.portfolio-develop-card {
+    width: 41%;
+    display: inline-block;
+    position: relative;
+    background: rgb(8, 131, 247);
+    overflow: hidden;
+    box-shadow: 0 0 4px #00000063;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-right: 4%;
+    height: 365px;
+    box-sizing: border-box;
+}
+
+.portfolio-develop-card h5 {
+    font-size: 26px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.portfolio-develop-card p {
+    margin-top: 10px;
+    font-weight: lighter;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.portfolio-develop-card {
+    box-sizing: border-box;
+    padding: 15px;
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #29c4ff;
+}
+
+.portfolio-develop-card1 {
+    color: #111111;
+    background-image: url(../image/develop/newWebsite.png);
+    background-color: #29c4ff;
+}
+
+.portfolio-develop-card2 {
+    color: #111111;
+    background-image: url(../image/develop/newWebsite-en.png);
+    background-color: #ececec;
+}
+
+.portfolio-develop-card2 h5,
+.portfolio-develop-card2 p {
+    color: #1a1a1a;
+}
+
+.portfolio-develop-card3 {
+    color: #111111;
+    background-image: url(../image/develop/2022newyear.png);
+    background-color: #ff5d55;
+}
+
+.portfolio-develop-card3 h5,
+.portfolio-develop-card3 p {}
+
+.portfolio-develop-card4 {
+    color: #111111;
+    background-image: url(../image/develop/2020newyear.png);
+    background-color: #f9f8eb;
+}
+
+.portfolio-develop-card4 h5,
+.portfolio-develop-card4 p {
+    color: #1a1a1a;
 }
 
 
-.typingCursorWhite {
-  -webkit-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
+/* UI設計 */
+
+.portfolio-prototype-area {
+    width: 75%;
+    position: relative;
+    left: 25%;
+    box-sizing: border-box;
+    padding: 50px 0;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} {
-  -webkit-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
+.portfolio-prototype-menu {
+    text-align: end;
+    padding: 10px 12%;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.portfolio-prototype-area .portfolio-prototype-menu li {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+.portfolio-prototype-menu li.active {
+    border-bottom: 1px solid #202020;
+}
+
+.portfolio-prototype-block {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+
+.portfolio-prototype-card {
+    width: 27%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #20202038;
+    box-sizing: border-box;
+}
+
+.portfolio-prototype-card img {
+    width: 100%;
+}
+
+.portfolio-prototype-text {
+    padding: 15px 20px 30px;
+}
+
+.portfolio-prototype-text h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.portfolio-prototype-text p {
+    font-size: 14px;
+}
+
+
+/* 平面設計 */
+
+.portfolio-graphicDesign-area {
+    width: 75%;
+    position: relative;
+    left: 25%;
+    box-sizing: border-box;
+}
+
+.portfolio-graphicDesign-areas {
+    width: 100%;
+    height: 920px;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+    padding: 25px 25px 50px;
+}
+
+.portfolio-graphicDesign-areas h4 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.portfolio-graphicDesign-descraption {
+    width: 40%;
+    letter-spacing: .2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.portfolio-graphicDesign-areas p {
+    font-size: 16px;
+    font-weight: inherit;
+    text-align: revert;
+}
+
+
+/* 平面設計多個顏色 */
+
+.portfolio-graphicDesign-areas {
+    color: #080808;
+    text-shadow: 0 0 2px #38383833;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #383838;
+}
+
+.portfolio-graphicDesign-area1 {
+    background: #c9dbd6;
+    color: #fff;
+}
+
+.portfolio-graphicDesign-area2 {
+    background: #efc87e;
+    color: #fff;
+}
+
+.portfolio-graphicDesign-area3 {
+    background: #ede9e9;
+    color: #1d1d1d;
+    text-shadow: 0 0 3px #38383833;
+}
+
+
+/* EDM設計版面 */
+
+.portfolio-edmDesign-area {
+    width: 75%;
+    position: relative;
+    left: 25%;
+    padding: 100px;
+    box-sizing: border-box;
+    background-color: rgb(161, 172, 166);
+}
+
+.portfolio-edmDesign-area .edmDesign-ul {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(35, 1fr);
+}
+
+.edmDesign-li {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 4px #18181833;
+    overflow: hidden;
+    background: #292929;
+}
+
+.edmDesign-tooBar {
+    position: absolute;
+    background: #ffffffc0;
+    right: 10px;
+    top: 5px;
+    padding: 3px 5px;
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+
+.edmDesign-tooBar:hover {
+    background: #ffffff;
+}
+
+.edmDesign-tooBar a {
+    color: #161616;
+}
+
+.edmDesign-li img {
+    width: 100%;
+}
+
+.portfolio-edmDesign-area .edmDesign-li1 {
+    grid-area: 1/1/ span 13 / span 4;
+}
+
+.portfolio-edmDesign-area .edmDesign-li2 {
+    grid-area: 1/6/ span 14 / span 4;
+}
+
+.portfolio-edmDesign-area .edmDesign-li3 {
+    grid-area: 1/11/ span 10 / span 4;
+}
+
+
+/* 下一層edm */
+
+.portfolio-edmDesign-area .edmDesign-li4 {
+    grid-area: 15/1/ span 14 / span 4;
+}
+
+.portfolio-edmDesign-area .edmDesign-li5 {
+    grid-area: 16/6/ span 8 / span 4;
+}
+
+.portfolio-edmDesign-area .edmDesign-li6 {
+    grid-area: 12/11/ span 18 / span 4;
+}
+
+
+/* 下一層edm */
+
+.portfolio-edmDesign-area .edmDesign-li7 {
+    grid-area: 25/6/ span 10 / span 4;
 }
