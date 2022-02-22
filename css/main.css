@@ -40,9 +40,11 @@
 .portfolio-list {
     margin-left: 20%;
     height: 100%;
-    border-left: 1px solid #202020;
+    border-left-width: 1px;
+    border-left-style: solid;
     padding: 16% 8%;
     box-sizing: border-box;
+    color: #161616;
 }
 
 .portfolio-content p {
@@ -53,19 +55,23 @@
 }
 
 .portfolio-list ul li {
-    margin-top: 35px;
-    color: rgb(58 58 58 / 70%);
+    margin-top: 40px;
+    opacity: 0.7;
     transform: scale(1);
-    transition: all 0.05s;
 }
 
 .portfolio-menu .fabb.active {
     transform: scale(1.35);
-    transform-origin: left;
-    color: #161616;
-    border-top: 2px solid #202020;
+    transform-origin: left center;
+    opacity: 1;
+    border-top-width: 2px;
+    border-top-style: solid;
     padding-top: 2px;
     display: table;
+}
+
+.portfolio-banner-background {
+    transition: all 0.2s;
 }
 
 .portfolio-banner-area {
@@ -117,6 +123,28 @@
     font-weight: lighter;
 }
 
+.portfolio-individual {
+    margin-top: 10px;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.26);
+}
+
+.portfolio-individual h5 {
+    font-size: 18px;
+}
+
+.portfolio-individual .portfolio-language {
+    margin-top: 10px;
+}
+
+.portfolio-individual .portfolio-language h6 {
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+.portfolio-individual .portfolio-language p {
+    font-size: 18px;
+}
+
 .portfolio-develop-area {
     width: 75%;
     position: relative;
@@ -135,6 +163,8 @@
 .portfolio-develop-area h4 {
     font-size: 34px;
     font-weight: normal;
+    padding: 5px 2px;
+    box-sizing: border-box;
 }
 
 .portfolio-develop-cards {
@@ -154,7 +184,7 @@
     border-radius: 20px;
     margin-top: 50px;
     margin-right: 4%;
-    height: 365px;
+    height: 370px;
     box-sizing: border-box;
 }
 
@@ -177,7 +207,31 @@
     background-size: 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-color: #29c4ff;
+    background-color: #a2c7ed;
+    position: relative;
+}
+
+.portfolio-develop-card .develop-cards {
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.develop-cards-privacy {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #2222227a;
+    color: #fff;
+    padding: 5px;
 }
 
 .portfolio-develop-card1 {
@@ -217,6 +271,72 @@
     color: #1a1a1a;
 }
 
+.portfolio-develop-card5 {
+    color: #111111;
+    background-image: url(../image/develop/software1.png);
+    filter: blur(1px);
+}
+
+.portfolio-develop-card5b {
+    background-color: #f9f8eb;
+}
+
+.portfolio-develop-card5b h5,
+.portfolio-develop-card5b p {
+    color: #1a1a1a;
+    text-shadow: 0 0 3px #ffffff57;
+}
+
+.portfolio-develop-card6 {
+    color: #111111;
+    background-image: url(../image/develop/software2.png);
+    filter: blur(1px);
+}
+
+.portfolio-develop-card6b {
+    background-color: #95d1ff;
+}
+
+.portfolio-develop-card6b h5,
+.portfolio-develop-card6b p {
+    color: #ffffff;
+    text-shadow: 0 0 3px #2c2c2c57;
+}
+
+.portfolio-develop-card7 {
+    color: #111111;
+    background-image: url(../image/develop/software3.png);
+    filter: blur(1px);
+}
+
+.portfolio-develop-card7b {
+    background-color: #e4f1ee;
+}
+
+.portfolio-develop-card7b h5,
+.portfolio-develop-card7b p {
+    color: #2c2c2c;
+    text-shadow: 0 0 3px #ffffff57;
+}
+
+.portfolio-develop-card8 {
+    color: #111111;
+    background-image: url(../image/develop/software4.png);
+    filter: blur(1px);
+}
+
+.portfolio-develop-card8b {
+    background-color: #dee1eb;
+}
+
+.portfolio-develop-card8b h5,
+.portfolio-develop-card8b p {
+    color: #2c2c2c;
+    text-shadow: 0 0 3px #ffffff57;
+}
+
+.portfolio-develop-card-privacy {}
+
 
 /* UI設計 */
 
@@ -230,7 +350,7 @@
 
 .portfolio-prototype-menu {
     text-align: end;
-    padding: 10px 12%;
+    padding: 10px 12% 0;
     position: sticky;
     top: 0;
     background: #ffffff;
@@ -243,7 +363,7 @@
 }
 
 .portfolio-prototype-menu li.active {
-    border-bottom: 1px solid #202020;
+    border-bottom: 2px solid #202020;
 }
 
 .portfolio-prototype-block {
@@ -331,19 +451,29 @@
 }
 
 .portfolio-graphicDesign-area1 {
-    background: #c9dbd6;
     color: #fff;
+    position: sticky;
+    top: 0;
 }
 
 .portfolio-graphicDesign-area2 {
-    background: #efc87e;
     color: #fff;
+    position: sticky;
+    top: 0;
 }
 
 .portfolio-graphicDesign-area3 {
-    background: #ede9e9;
     color: #1d1d1d;
     text-shadow: 0 0 3px #38383833;
+    position: sticky;
+    top: 0;
+}
+
+.portfolio-graphicDesign-area4 {
+    color: #ffffff;
+    text-shadow: 0 0 3px #38383833;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -373,22 +503,31 @@
     background: #292929;
 }
 
+.portfolio-tooBar,
 .edmDesign-tooBar {
     position: absolute;
     background: #ffffffc0;
     right: 10px;
-    top: 5px;
+    top: 10px;
     padding: 3px 5px;
     border-radius: 10px;
     transition: all 0.1s;
+    box-shadow: 0 0 3px #2020204f;
 }
 
+.portfolio-tooBar:hover,
 .edmDesign-tooBar:hover {
     background: #ffffff;
 }
 
+.portfolio-tooBar a,
 .edmDesign-tooBar a {
     color: #161616;
+}
+
+.edmDesign-li p {
+    padding: 5px 10px;
+    color: #ffffff;
 }
 
 .edmDesign-li img {

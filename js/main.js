@@ -2,6 +2,7 @@ window.onload = function() {
 
     var checkClick = true;
     var sectionIds = {};
+    var graphicSectionIds = {};
 
 
     initTyping();
@@ -42,6 +43,11 @@ window.onload = function() {
         sectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
     });
 
+    $(".graphicDesignSection").each(function() {
+        var $this = $(this);
+        graphicSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
+    })
+
     $(window).scroll(function(evet) {
         if (checkClick) {
             var scrolled = $(this).scrollTop();
@@ -58,6 +64,33 @@ window.onload = function() {
                     c.addClass("active");
                 }
             }
+
+            for (key in graphicSectionIds) {
+                var keyDiv = document.getElementById(key);
+                var computedStyle = document.defaultView.getComputedStyle(keyDiv, null);
+                var graphicArea = $("#menu4").height();
+                var endGraphicHeight = graphicSectionIds["graphicDesign1"] + graphicArea;
+                var color = computedStyle.color;
+
+                if (scrolled >= graphicSectionIds[key]) {
+                    if (scrolled > endGraphicHeight) {
+                        $(".portfolio-banner-background").css("background", "");
+                        $(".portfolio-list").css({ "color": "", });
+
+                    } else {
+                        var getBackground = computedStyle.backgroundColor;
+                        $(".portfolio-banner-background").css("background", getBackground);
+                        $(".portfolio-list").css({ "color": color, });
+                    }
+
+                } else if (scrolled < graphicSectionIds["graphicDesign1"]) {
+
+                    $(".portfolio-banner-background").css("background", "");
+                    $(".portfolio-list").css({ "color": "", });
+
+                }
+            }
+
         }
     });
 
@@ -80,6 +113,7 @@ window.onload = function() {
         $(".portfolio-prototype-menu li").removeClass("active");
         $(this).addClass("active");
     })
+
 
 }
 
@@ -112,9 +146,24 @@ function changePrototypeData(type) {
         return
     $prototypeCard.each(function() {
         var data = $(this).data("item");
-        if (data != type) {
+        var boolCheck = checkData(data, type);
+
+        debugger
+        if (!boolCheck) {
             $(this).fadeOut(0);
         }
     });
 
+}
+
+function checkData(data, type) {
+    var datasplit = data.split(",");
+    var checkContent = false;
+    datasplit.forEach(function(d) {
+        if (d == type) {
+            debugger
+            checkContent = true;
+        }
+    });
+    return checkContent;
 }
