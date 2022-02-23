@@ -1,0 +1,507 @@
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 微軟正黑體;
+    }
+    /* menu */
+    
+    .portfolio-menu {
+        position: fixed;
+        width: 25%;
+        min-width: 275px;
+        max-width: 400px;
+        height: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        overflow: auto;
+        z-index: 2;
+    }
+    
+    .portfolio-list {
+        margin-left: 20%;
+        height: 100%;
+        border-left: 1px solid #202020;
+        padding: 16% 8%;
+        box-sizing: border-box;
+    }
+    
+    .portfolio-content p {
+        border-top: 2px solid #202020;
+        display: table;
+        font-size: 18px;
+        padding-top: 3px;
+    }
+    
+    .portfolio-list ul li {
+        margin-top: 35px;
+        color: rgb(58 58 58 / 80%);
+    }
+    
+    .area-banner {
+        background: url(../image/IMAG3262~2.jpg) no-repeat 50% 50%;
+        width: 100%;
+        height: 1000px;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .bannet-text {
+        display: block;
+        position: absolute;
+        margin: auto;
+        left: 60%;
+        top: 10%;
+    }
+    
+    .bannet-text h3 {
+        font-size: 4.5em;
+        margin-bottom: 10px;
+    }
+    
+    .bannet-text h4,
+    .bannet-text p {
+        font-size: 3em;
+        font-weight: bold;
+        line-height: 1.5em;
+    }
+    /* 關於 */
+    
+    .area-about {
+        padding: 75px 100px;
+        display: block;
+        overflow: auto;
+    }
+    
+    .about-title {
+        width: 25%;
+        float: left;
+    }
+    
+    .about-title h4 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    .about-text {
+        width: 75%;
+        float: left;
+    }
+    
+    .about-text p {
+        font-size: 1.4em;
+    }
+    /* 經驗 */
+    
+    .area-experience {
+        padding: 75px 100px;
+        display: block;
+        background: #4cccf9;
+        overflow: auto;
+    }
+    
+    .experience-title {
+        width: 25%;
+        float: left;
+    }
+    
+    .experience-title h4 {
+        font-size: 1.8em;
+        text-align: center;
+        color: white;
+    }
+    
+    .experience-text {
+        box-sizing: border-box;
+        width: 75%;
+        float: left;
+        border: 1px solid white;
+        padding: 20px;
+    }
+    
+    .experience-text p {
+        font-size: 1.4em;
+        color: white;
+    }
+    
+    .experience-text-company {
+        font-weight: bold;
+    }
+    
+    .experience-text-company a {
+        color: white;
+    }
+    
+    .experience-text-year {
+        font-weight: bold;
+    }
+    /* 技能 */
+    
+    .area-skill {
+        padding: 75px 100px;
+        display: block;
+        overflow: auto;
+    }
+    
+    .skill-title {
+        width: 25%;
+        float: left;
+    }
+    
+    .skill-title h4 {
+        font-size: 1.8em;
+        text-align: center;
+        color: #4cccf9;
+    }
+    
+    .skill-text {
+        width: 37.5%;
+        float: left;
+    }
+    
+    .skill-text .skill-type {
+        font-size: 1.4em;
+        color: #4cccf9;
+    }
+    
+    .skill-porgressBar-table {
+        width: 100%;
+    }
+    
+    .skill-porgressBar-table .skill-porgressBar-item {
+        padding: 15px 0;
+    }
+    
+    .skill-porgressBar-item .item-name {
+        font-weight: bold;
+    }
+    
+    .skill-porgressBar-table progress {
+        display: inline-block;
+        width: 80%;
+        height: 20px;
+        padding: 15px 0 0 0;
+        background: none;
+        border: 0;
+        border-radius: 15px;
+        text-align: left;
+        position: relative;
+        font-size: 0.8em;
+    }
+    
+    .skill-porgressBar-table progress::-webkit-progress-bar {
+        height: 15px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #ccc;
+        border-radius: 15px;
+    }
+    
+    .skill-porgressBar-table progress::-webkit-progress-value {
+        display: inline-block;
+        float: left;
+        height: 15px;
+        margin: 0px -10px 0 0;
+        background: #4cccf9;
+        border-radius: 15px;
+        box-shadow: 0px 0px 6px #777 inset;
+    }
+    
+    .skill-porgressBar-table progress:after {
+        margin: -26px 0 0 -7px;
+        padding: 0;
+        display: inline-block;
+        float: left;
+        content: attr(value) "%";
+    }
+    /* 網站作品 */
+    
+    .area-websiteWorks {
+        padding: 75px 175px 75px 100px;
+        display: block;
+        background: #e5e5e5;
+        overflow: auto;
+    }
+    
+    .websiteWorks-title {
+        width: 25%;
+        float: left;
+    }
+    
+    .websiteWorks-title h4 {
+        font-size: 1.8em;
+        text-align: center;
+        color: black;
+    }
+    
+    .websiteWorks-title h4::after {
+        border: 2px solid black;
+        content: " ";
+        display: block;
+        width: 100px;
+        margin: 10px auto;
+    }
+    
+    .websiteWorks-district {
+        width: 75%;
+        float: left;
+    }
+    
+    .websiteWorks-item {
+        box-sizing: border-box;
+        width: 95%;
+        float: left;
+        padding: 30px;
+        background: white;
+        margin-bottom: 30px;
+    }
+    
+    .websiteWorks-item p {
+        font-size: 1.4em;
+        color: black;
+    }
+    
+    .websiteWorks-images {
+        width: 50%;
+        float: left;
+    }
+    
+    .websiteWorks-images img {
+        width: 100%;
+    }
+    
+    .websiteWorks-text {
+        width: 50%;
+        float: left;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    
+    .websiteWorks-text-company {
+        font-weight: bold;
+    }
+    
+    .websiteWorks-text-company a {
+        color: black;
+    }
+    
+    .websiteWorks-text-year {
+        font-weight: bold;
+    }
+    
+    .websiteWorks-item .websiteWorks-text-detail {
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1.6em;
+    }
+    /* photo */
+    
+    .area-photo {
+        padding: 75px 100px;
+        display: block;
+        overflow: auto;
+    }
+    
+    .photo-title {
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    .photo-title h4 {
+        font-size: 1.8em;
+        text-align: center;
+        color: black;
+    }
+    
+    .photo-title p {
+        text-align: center;
+        color: black;
+    }
+    
+    .photo-container {
+        width: 100%;
+    }
+    
+    .photo-container .photo-block {
+        width: calc(97% / 5);
+        height: 15vw;
+        overflow: hidden;
+        display: inline-block;
+        margin: 15px 0;
+        position: relative;
+    }
+    
+    .photo-block img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .area-footer {
+        padding: 75px 100px;
+        display: block;
+        overflow: auto;
+        background: #0e0d09;
+    }
+    
+    .area-footer h4 {
+        color: white;
+        line-height: 60px;
+    }
+    
+    .area-footer p {
+        color: white;
+    }
+    
+    @media screen and (max-width: 1280px) and (min-width: 1025px) {
+        /* 關於 */
+        .area-about {
+            padding: 50px 25px;
+        }
+        /* 經驗 */
+        .area-experience {
+            padding: 50px 25px;
+        }
+        /* 技能 */
+        .area-skill {
+            padding: 50px 25px;
+        }
+        /* 網站作品 */
+        .area-websiteWorks {
+            padding: 25px 25px;
+        }
+        /* 圖片 */
+        .area-photo {
+            padding: 50px;
+            display: block;
+            overflow: auto;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        /* 關於 */
+        .area-about {
+            padding: 50px;
+        }
+        .about-title {
+            width: 100%;
+            float: inherit;
+        }
+        .about-text {
+            width: 100%;
+            float: inherit;
+        }
+        /* 經驗 */
+        .area-experience {
+            padding: 50px;
+        }
+        .experience-title {
+            width: 100%;
+            float: inherit;
+        }
+        .experience-title h4 {
+            font-size: 1.8em;
+            text-align: center;
+            color: white;
+        }
+        .experience-text {
+            width: 100%;
+            float: inherit;
+            margin-top: 20px;
+        }
+        .experience-text p {
+            font-size: 1.4em;
+            color: white;
+        }
+        /* 技能 */
+        .area-skill {
+            padding: 50px;
+        }
+        .skill-title {
+            width: 100%;
+            float: inherit;
+        }
+        .skill-text {
+            width: 100%;
+            float: inherit;
+            margin-top: 20px;
+        }
+        .skill-text .skill-type {
+            font-size: 1.4em;
+            color: #4cccf9;
+        }
+        .skill-porgressBar-table {
+            width: 100%;
+        }
+        .skill-porgressBar-table progress {
+            width: 100%;
+        }
+        /* 網站作品 */
+        .area-websiteWorks {
+            padding: 25px;
+        }
+        .websiteWorks-title {
+            width: 100%;
+            float: inherit;
+        }
+        .websiteWorks-district {
+            width: 100%;
+        }
+        .websiteWorks-images {
+            width: 100%;
+            float: left;
+        }
+        .websiteWorks-text {
+            width: 100%;
+            padding: 0;
+        }
+        .websiteWorks-item {
+            width: 100%;
+        }
+        /* 圖片 */
+        .area-photo {
+            padding: 25px;
+        }
+        .photo-container .photo-block {
+            width: calc(98% / 2);
+            height: 45vw;
+            margin: 5px 0;
+        }
+    }
+    
+    .typingCursorWhite {
+        -webkit-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+    
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    {
+        -webkit-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+    
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }

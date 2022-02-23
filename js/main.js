@@ -114,7 +114,7 @@ window.onload = function() {
         $(this).addClass("active");
     })
 
-
+    $('html, body').animate({ scrollTop: ($(this).scrollTop() + 1) }, 10);
 }
 
 function fabClickFun() {
