@@ -5,6 +5,10 @@
     font-family: 微軟正黑體;
 }
 
+body {
+    min-width: 1000px;
+}
+
 .typingCursorWhite {
     animation: blink 0.7s infinite;
 }
@@ -431,12 +435,23 @@
     letter-spacing: .2em;
     margin-top: 10px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .portfolio-graphicDesign-areas p {
     font-size: 16px;
     font-weight: inherit;
     text-align: revert;
+}
+
+.portfolio-graphicDesign-image {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+}
+
+.portfolio-graphicDesign-image img {
+    width: 100%;
 }
 
 
@@ -567,4 +582,13 @@
 
 .portfolio-edmDesign-area .edmDesign-li7 {
     grid-area: 25/6/ span 10 / span 4;
+}
+
+@media screen and (max-width:1366px) {
+    .portfolio-develop-card {
+        height: 40vh;
+    }
+    .portfolio-prototype-card {
+        width: 45%;
+    }
 }
