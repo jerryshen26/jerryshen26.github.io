@@ -72,6 +72,7 @@ window.onload = function() {
                 var endGraphicHeight = graphicSectionIds["graphicDesign1"] + graphicArea;
                 var color = computedStyle.color;
 
+
                 if (scrolled >= graphicSectionIds[key]) {
                     if (scrolled > endGraphicHeight) {
                         $(".portfolio-banner-background").css("background", "");
@@ -115,6 +116,10 @@ window.onload = function() {
     })
 
     $('html, body').animate({ scrollTop: ($(this).scrollTop() + 1) }, 10);
+
+    $(".portfolio-graphicDesign-area1,.portfolio-graphicDesign-area2,.portfolio-graphicDesign-area3,.portfolio-graphicDesign-area4").css({ "position": "sticky", "top": "0" });
+
+
 }
 
 function fabClickFun() {
