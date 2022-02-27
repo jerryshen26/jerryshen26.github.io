@@ -64,6 +64,11 @@ body {
     transform: scale(1);
 }
 
+.portfolio-list ul li:hover{
+    color: #3683f9;
+    text-shadow: 0 0 2px #40404029;
+}
+
 .portfolio-menu .fabb.active {
     transform: scale(1.35);
     transform-origin: left center;
@@ -87,44 +92,16 @@ body {
     position: relative;
 }
 
-.bannet-text {
+.bannet-text-left {
     display: block;
     position: absolute;
     margin: auto;
-    left: 60%;
-    top: 10%;
+    left: 25%;
+    top: 15%;
+    width: 20%;
 }
-
-.bannet-text h3 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    letter-spacing: .05em;
-    /* background: linear-gradient(to right, #ff43d6 0%, #FF6C83 50%, #9073ff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; */
-    display: table;
-}
-
-.bannet-text h4 {
-    font-size: 3em;
-    font-weight: bold;
-    line-height: 1.5em;
-    letter-spacing: .15em;
-    border-top: 1px solid #111111;
-    margin-top: 15px;
-    display: table;
-}
-
-.bannet-text p {
-    font-size: 2.5em;
-    font-weight: bold;
-    line-height: 1.5em;
-}
-
-.portfolio-block p {
-    font-size: 1.5em;
-    font-weight: lighter;
+.bannet-text-left::after{
+    content: "";
 }
 
 .portfolio-individual {
@@ -137,17 +114,67 @@ body {
 }
 
 .portfolio-individual .portfolio-language {
-    margin-top: 10px;
+    margin-top: 15px;
+    width: 70%;
 }
 
-.portfolio-individual .portfolio-language h6 {
+.portfolio-individual .portfolio-language h6,.portfolio-language td {
     font-size: 14px;
     color: #2e2e2e;
+    margin-bottom:5px;
+    padding: 3px 0;
 }
 
 .portfolio-individual .portfolio-language p {
-    font-size: 18px;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
+.portfolio-individual .portfolio-language li {
+    list-style: disc;
+    margin-left: 8%;
+}
+
+.bannet-text-right {
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 60%;
+    top: 14%;
+}
+
+.bannet-text-right h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: .05em;
+    /* background: linear-gradient(to right, #ff43d6 0%, #FF6C83 50%, #9073ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    display: table;
+}
+
+.bannet-text-right h4 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5em;
+    letter-spacing: .15em;
+    border-top: 1px solid #111111;
+    margin-top: 15px;
+    display: table;
+}
+
+.bannet-text-right p {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.portfolio-block p {
+    font-size: 1.35em;
+    font-weight: lighter;
+}
+
+
 
 .portfolio-develop-area {
     width: 75%;
