@@ -98,15 +98,49 @@ body {
     margin: auto;
     left: 25%;
     top: 15%;
-    width: 20%;
 }
 .bannet-text-left::after{
     content: "";
 }
 
+.bannet-text-left h3 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    letter-spacing: .05em;
+    /* background: linear-gradient(to right, #ff43d6 0%, #FF6C83 50%, #9073ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    display: table;
+}
+
+.bannet-text-left p {
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.bannet-text-left button{
+    margin: 30px auto;
+    font-size: 20px;
+    background: #0089FF;
+
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    box-shadow: 0 0 3px #ffffff45;
+}
+
+.bannet-text-left button a{
+    color: white;
+    text-decoration: none;
+}
+
+
 .portfolio-individual {
-    margin-top: 10px;
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.26);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio-individual h5 {
@@ -115,23 +149,35 @@ body {
 
 .portfolio-individual .portfolio-language {
     margin-top: 15px;
-    width: 70%;
+}
+
+.portfolio-individual .portfolio-language-profession ul{
+    margin-left: 10px;
+}
+
+.portfolio-individual .portfolio-language-profession {
+    width: 25%;
 }
 
 .portfolio-individual .portfolio-language h6,.portfolio-language td {
-    font-size: 14px;
-    color: #2e2e2e;
-    margin-bottom:5px;
+    font-size: 16px;
+    color: #242424;
+    margin-bottom: 5px;
     padding: 3px 0;
+    font-weight: bold;
 }
 
 .portfolio-individual .portfolio-language p {
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 10px;
+    color: #111111;
 }
 .portfolio-individual .portfolio-language li {
     list-style: disc;
-    margin-left: 8%;
+    margin-left: 7%;
+    font-size: 14px;
+    color: #363636;
+    text-shadow: 0 0 3px #ffffff21;
 }
 
 .bannet-text-right {
@@ -139,7 +185,15 @@ body {
     position: absolute;
     margin: auto;
     left: 60%;
-    top: 14%;
+    top: 15%;
+}
+.bannet-text-block{
+    backdrop-filter: blur(10px);
+    background: #ffffff40;
+    box-shadow: 0 0 2px #2222221c;
+    width: 90%;
+    padding: 3%;
+    box-sizing: border-box;
 }
 
 .bannet-text-right h3 {
