@@ -271,6 +271,13 @@ body {
     margin-right: 4%;
     height: 370px;
     box-sizing: border-box;
+    transition: all 0.2s;
+}
+.portfolio-develop-card:hover{
+    background-size: 110%;
+}
+.portfolio-develop-card:hover .develop-cards-privacy{
+    
 }
 
 .portfolio-develop-card h5 {
@@ -468,6 +475,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 3px #20202038;
     box-sizing: border-box;
+    transition: all 0.2s;
+}
+.portfolio-prototype-card:hover{
+    box-shadow: 0 0 5px #00a2ff88;
 }
 
 .portfolio-prototype-card img {
@@ -533,6 +544,10 @@ body {
 
 .portfolio-graphicDesign-image img {
     width: 100%;
+    transition: all 0.2s;
+}
+.portfolio-graphicDesign-image:hover img{
+    transform: scale(1.075);
 }
 
 
