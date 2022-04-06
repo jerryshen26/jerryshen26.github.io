@@ -63,6 +63,10 @@ body {
     opacity: 0.7;
     transform: scale(1);
 }
+.portfolio-list ul li a{
+    color: inherit;
+    text-decoration: none;
+}
 
 .portfolio-list ul li:hover{
     color: #3683f9;
@@ -151,13 +155,6 @@ body {
     margin-top: 15px;
 }
 
-.portfolio-individual .portfolio-language-profession ul{
-    margin-left: 10px;
-}
-
-.portfolio-individual .portfolio-language-profession {
-    width: 25%;
-}
 
 .portfolio-individual .portfolio-language h6,.portfolio-language td {
     font-size: 16px;
@@ -208,7 +205,7 @@ body {
 }
 
 .bannet-text-right h4 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     line-height: 1.5em;
     letter-spacing: .15em;
@@ -230,446 +227,179 @@ body {
 
 
 
-.portfolio-develop-area {
-    width: 75%;
-    position: relative;
-    left: 25%;
-    padding: 100px 25px 50px;
-    box-sizing: border-box;
+/* resume */
+.portfolio-resume-area{
+    background-color: #F1BD00;
+    display: table;
+
 }
 
-.portfolio-develop-section h4 {
-    background: rgb(255, 255, 255);
-    position: sticky;
-    top: 0;
-    z-index: 99;
-}
 
-.portfolio-develop-area h4 {
-    font-size: 34px;
-    font-weight: normal;
-    padding: 5px 2px;
-    box-sizing: border-box;
-}
-
-.portfolio-develop-cards {
-    position: relative;
-    padding-bottom: 100px;
-    padding-left: 1%;
-    box-sizing: border-box;
-}
-
-.portfolio-develop-card {
-    width: 41%;
-    display: inline-block;
-    position: relative;
-    background: rgb(8, 131, 247);
-    overflow: hidden;
-    box-shadow: 0 0 4px #00000063;
-    border-radius: 20px;
-    margin-top: 50px;
-    margin-right: 4%;
-    height: 370px;
-    box-sizing: border-box;
-    transition: all 0.2s;
-}
-.portfolio-develop-card:hover{
-    background-size: 110%;
-}
-.portfolio-develop-card:hover .develop-cards-privacy{
-    
-}
-
-.portfolio-develop-card h5 {
-    font-size: 26px;
-    font-weight: normal;
-    color: #fff;
-}
-
-.portfolio-develop-card p {
-    margin-top: 10px;
-    font-weight: lighter;
-    color: #fff;
-    opacity: 0.75;
-}
-
-.portfolio-develop-card {
-    box-sizing: border-box;
-    padding: 15px;
-    background-size: 100%;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-color: #a2c7ed;
-    position: relative;
-}
-
-.portfolio-develop-card .develop-cards {
-    background-size: 100%;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
+.portfolio-resume-area .resumeSide{
     height: 100%;
-    top: 0;
-    left: 0;
+    width: 25%;
+    background: #444B59;
+    display: table-cell;
+}
+.portfolio-resume-area .resumeSection{
+    height: 100%;
+    width: 74.5%;
+    display: table-cell;
+    color: white;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 3% 5%;
 }
 
-.develop-cards-privacy {
-    position: absolute;
+.resumeSection h4{
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+.resumeSection .resumeCard{
     width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background: #2222227a;
-    color: #fff;
-    padding: 5px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 25px 0 50px 0;
+    box-sizing: border-box;
+    padding: 2.5%;
+}
+.resumeCard>p{
+    color: #444B59;
+    font-size: 36px;
+    border-bottom: 2px solid #444B59;
+    display: table;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 
-.portfolio-develop-card1 {
-    color: #111111;
-    background-image: url(../image/develop/newWebsite.png);
-    background-color: #29c4ff;
+.resumeCard .resume-block{
+
 }
 
-.portfolio-develop-card2 {
-    color: #111111;
-    background-image: url(../image/develop/newWebsite-en.png);
-    background-color: #ececec;
+.resumeSection .resumeContent{
+    display: block;
 }
 
-.portfolio-develop-card2 h5,
-.portfolio-develop-card2 p {
-    color: #1a1a1a;
+.resumeContent .resume-block{
+    display: block;
+    color: #444B59;
+    padding: 20px 0;
 }
-
-.portfolio-develop-card3 {
-    color: #111111;
-    background-image: url(../image/develop/2022newyear.png);
-    background-color: #ff5d55;
-}
-
-.portfolio-develop-card3 h5,
-.portfolio-develop-card3 p {}
-
-.portfolio-develop-card4 {
-    color: #111111;
-    background-image: url(../image/develop/2020newyear.png);
-    background-color: #f9f8eb;
-}
-
-.portfolio-develop-card4 h5,
-.portfolio-develop-card4 p {
-    color: #1a1a1a;
-}
-
-.portfolio-develop-card5 {
-    color: #111111;
-    background-image: url(../image/develop/software1.png);
-    filter: blur(1px);
-}
-
-.portfolio-develop-card5b {
-    background-color: #f9f8eb;
-}
-
-.portfolio-develop-card5b h5,
-.portfolio-develop-card5b p {
-    color: #1a1a1a;
-    text-shadow: 0 0 3px #ffffff57;
-}
-
-.portfolio-develop-card6 {
-    color: #111111;
-    background-image: url(../image/develop/software2.png);
-    filter: blur(1px);
-}
-
-.portfolio-develop-card6b {
-    background-color: #95d1ff;
-}
-
-.portfolio-develop-card6b h5,
-.portfolio-develop-card6b p {
-    color: #ffffff;
-    text-shadow: 0 0 3px #2c2c2c57;
-}
-
-.portfolio-develop-card7 {
-    color: #111111;
-    background-image: url(../image/develop/software3.png);
-    filter: blur(1px);
-}
-
-.portfolio-develop-card7b {
-    background-color: #e4f1ee;
-}
-
-.portfolio-develop-card7b h5,
-.portfolio-develop-card7b p {
-    color: #2c2c2c;
-    text-shadow: 0 0 3px #ffffff57;
-}
-
-.portfolio-develop-card8 {
-    color: #111111;
-    background-image: url(../image/develop/software4.png);
-    filter: blur(1px);
-}
-
-.portfolio-develop-card8b {
-    background-color: #dee1eb;
-}
-
-.portfolio-develop-card8b h5,
-.portfolio-develop-card8b p {
-    color: #2c2c2c;
-    text-shadow: 0 0 3px #ffffff57;
-}
-
-.portfolio-develop-card-privacy {}
-
-
-/* UI設計 */
-
-.portfolio-prototype-area {
-    width: 75%;
+.resume-timeline{
     position: relative;
-    left: 25%;
+}
+
+.resume-timeline::before{
+    content: "";
+    height: 95%;
+    background: #444B59;
+    width: 2px;
+    position: absolute;
+    left: 5%;
+    z-index: 10;
+    bottom: 0;
+    margin: auto;
+}
+
+.resume-block .resume-timeline li{
     box-sizing: border-box;
-    padding: 50px 0;
+    z-index: 20;
+    position: relative;
+    margin-left: 105px;
 }
 
-.portfolio-prototype-menu {
-    text-align: end;
-    padding: 10px 12% 0;
-    position: sticky;
-    top: 0;
-    background: #ffffff;
+.resume-block .resume-timeline li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #0089FF;
+    border-radius: 50%;
+    vertical-align: top;   
+    border: 2px solid #0089FF;
+    position: absolute;
+    left: -63px;
+    margin-top: 12px;
 }
 
-.portfolio-prototype-area .portfolio-prototype-menu li {
+.resume-div{
     display: inline-block;
-    padding: 5px 20px;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.resume-block li .resume-Title{
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.resume-block li .resume-date{
     font-size: 18px;
-}
-
-.portfolio-prototype-menu li.active {
-    border-bottom: 2px solid #202020;
-}
-
-.portfolio-prototype-block {
-    padding: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 1%;
-    box-sizing: border-box;
-}
-
-.portfolio-prototype-card {
-    width: 27%;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 3px #20202038;
-    box-sizing: border-box;
-    transition: all 0.2s;
-}
-.portfolio-prototype-card:hover{
-    box-shadow: 0 0 5px #00a2ff88;
-}
-
-.portfolio-prototype-card img {
-    width: 100%;
-}
-
-.portfolio-prototype-text {
-    padding: 15px 20px 30px;
-}
-
-.portfolio-prototype-text h5 {
-    font-size: 20px;
+    color: #F1BD00;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.portfolio-prototype-text p {
-    font-size: 14px;
-}
-
-
-/* 平面設計 */
-
-.portfolio-graphicDesign-area {
-    width: 75%;
-    position: relative;
-    left: 25%;
-    box-sizing: border-box;
-}
-
-.portfolio-graphicDesign-areas {
-    width: 100%;
-    height: 920px;
-    position: relative;
-    padding: 30px;
-    box-sizing: border-box;
-    padding: 25px 25px 50px;
-}
-
-.portfolio-graphicDesign-areas h4 {
-    font-size: 24px;
-    font-weight: normal;
-}
-
-.portfolio-graphicDesign-descraption {
-    width: 40%;
-    letter-spacing: .2em;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.portfolio-graphicDesign-areas p {
+.resume-block li .resume-content{
     font-size: 16px;
-    font-weight: inherit;
-    text-align: revert;
-}
-
-.portfolio-graphicDesign-image {
-    position: absolute;
-    width: 95%;
-    height: 100%;
-}
-
-.portfolio-graphicDesign-image img {
-    width: 100%;
-    transition: all 0.2s;
-}
-.portfolio-graphicDesign-image:hover img{
-    transform: scale(1.075);
 }
 
 
-/* 平面設計多個顏色 */
 
-.portfolio-graphicDesign-areas {
-    color: #080808;
-    text-shadow: 0 0 2px #38383833;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    color: #383838;
-}
-
-.portfolio-graphicDesign-area1 {
-    color: #fff;
-}
-
-.portfolio-graphicDesign-area2 {
-    color: #fff;
-}
-
-.portfolio-graphicDesign-area3 {
-    color: #1d1d1d;
-    text-shadow: 0 0 3px #38383833;
-}
-
-.portfolio-graphicDesign-area4 {
-    color: #ffffff;
-    text-shadow: 0 0 3px #38383833;
-}
-
-
-/* EDM設計版面 */
-
-.portfolio-edmDesign-area {
-    width: 75%;
-    position: relative;
-    left: 25%;
-    padding: 100px;
+/* progress */
+.resume-card{
+    padding: 15px;
     box-sizing: border-box;
-    background-color: rgb(161, 172, 166);
-    color: #ffffff;
-}
-
-.portfolio-edmDesign-area .edmDesign-ul {
-    display: grid;
-    grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(35, 1fr);
-}
-
-.edmDesign-li {
-    position: relative;
-    background: #fff;
+    box-shadow: 0 0 3px #2a2a2a33;
     border-radius: 15px;
-    box-shadow: 0 0 4px #18181833;
-    overflow: hidden;
-    background: #292929;
+    margin: 20px 0;
 }
 
-.portfolio-tooBar,
-.edmDesign-tooBar {
-    position: absolute;
-    background: #ffffffc0;
-    right: 10px;
-    top: 10px;
-    padding: 3px 5px;
-    border-radius: 10px;
-    transition: all 0.1s;
-    box-shadow: 0 0 3px #2020204f;
+.resume-card h4{
+    font-size: 20px;
+    color: #444B59;
+    font-weight: 600;
+    margin-bottom:15px;
 }
 
-.portfolio-tooBar:hover,
-.edmDesign-tooBar:hover {
-    background: #ffffff;
+.resume-progress{
+    margin-bottom: 20px;
 }
 
-.portfolio-tooBar a,
-.edmDesign-tooBar a {
-    color: #161616;
+.resume-progress p{
+    color: #444B59;
+    margin-bottom: 5px;
 }
 
-.edmDesign-li p {
-    padding: 5px 10px;
-    color: #ffffff;
-}
 
-.edmDesign-li img {
+progress{
+    -webkit-appearance: none;
     width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+  }  
+
+.resume-block  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+  }
+
+.resume-block  progress[value]::-webkit-progress-value {
+    background-image:
+         -webkit-linear-gradient(left, #00FEFF, #00A9FF);  
+      border-radius: 10px; 
+
+  }
+
+.resume-block-skill ul{
+    display: flex;
+    justify-content:space-between;
 }
 
-.portfolio-edmDesign-area .edmDesign-li1 {
-    grid-area: 1/1/ span 13 / span 4;
-}
-
-.portfolio-edmDesign-area .edmDesign-li2 {
-    grid-area: 1/6/ span 14 / span 4;
-}
-
-.portfolio-edmDesign-area .edmDesign-li3 {
-    grid-area: 1/11/ span 10 / span 4;
-}
-
-
-/* 下一層edm */
-
-.portfolio-edmDesign-area .edmDesign-li4 {
-    grid-area: 15/1/ span 14 / span 4;
-}
-
-.portfolio-edmDesign-area .edmDesign-li5 {
-    grid-area: 16/6/ span 8 / span 4;
-}
-
-.portfolio-edmDesign-area .edmDesign-li6 {
-    grid-area: 12/11/ span 18 / span 4;
-}
-
-
-/* 下一層edm */
-
-.portfolio-edmDesign-area .edmDesign-li7 {
-    grid-area: 25/6/ span 10 / span 4;
+  .resume-block-skill li{
+      flex: 0 0 2;
+      width: 23%;
 }
 
 @media screen and (max-width:1366px) {

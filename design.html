@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/design.css">
+    <script src="js/fontawesome-all.js"></script>
+    <title>Jerry Portfolio-Design</title>
+</head>
+
+<body>
+    <!-- menu -->
+    <div class="portfolio-menu">
+        <div class="portfolio-list">
+            <div class="portfolio-content">
+                <a href="./index.html">
+                    <p>回首頁</p>
+                </a>
+            </div>
+            <ul>
+                <li data-id="menu2" class="fabb active">
+                    <h3>開發｜Develop</h3>
+                </li>
+                <li data-id="menu3" class="fabb">
+                    <h3>介面設計｜UI Prototype</h3>
+                </li>
+                <li data-id="menu4" class="fabb">
+                    <h3>平面設計</h3>
+                </li>
+                <!-- <li data-id="menu5" class="fabb">
+                    <h3>特殊的</h3>
+                </li> -->
+                <li data-id="menu6" class="fabb">
+                    <h3>電子報EDM</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="portfolio-banner-background">
+        
+        <!-- 首頁 -->
+        <div class="portfolio-develop-area section" id="menu2">
+            <div class="portfolio-develop-section">
+                <h4>網站開發</h4>
+                <div class="portfolio-develop-cards">
+                    <ul>
+                        <li class="portfolio-develop-card portfolio-develop-card1">
+                            <h5>公司台灣網站開發與設計</h5>
+                            <p>001</p>
+                            <div class="portfolio-tooBar">
+                                <a href="https://www.lcnet.com.tw/" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="portfolio-develop-card portfolio-develop-card2">
+                            <h5>公司國際版網站開發與設計</h5>
+                            <p>002</p>
+                            <div class="portfolio-tooBar">
+                                <a href="https://www.lcnet.com.tw/en" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="portfolio-develop-card portfolio-develop-card3">
+                            <h5>2022虎年祝賀開發與設計</h5>
+                            <p>003</p>
+                            <div class="portfolio-tooBar">
+                                <a href="https://www.lcnet.com.tw/images/2022veredm/EDM_Web-2022-v2.html" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="portfolio-develop-card portfolio-develop-card4">
+                            <h5>2020鼠年祝賀開發與設計</h5>
+                            <p>004</p>
+                            <div class="portfolio-tooBar">
+                                <a href="https://www.lcnet.com.tw/images/2020veredm/EDM_Web-2020-v2.html" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="portfolio-develop-section">
+                <h4>軟體開發</h4>
+                <div class="portfolio-develop-cards">
+                    <ul>
+                        <li class="portfolio-develop-card portfolio-develop-card5b">
+                            <h5>自訂樣式</h5>
+                            <p>001</p>
+                            <div class="develop-cards portfolio-develop-card5">
+                            </div>
+                            <div class="develop-cards-privacy">
+                                因爲保密條款細節不便公開，敬請見諒！
+                            </div>
+                        </li>
+                        <li class="portfolio-develop-card portfolio-develop-card6b">
+                            <h5>Mobile開發</h5>
+                            <p>002</p>
+                            <div class="develop-cards portfolio-develop-card6">
+                            </div>
+                            <div class="develop-cards-privacy">
+                                因爲保密條款細節不便公開，敬請見諒！
+                            </div>
+
+                        </li>
+                        <li class="portfolio-develop-card portfolio-develop-card7b">
+                            <h5>教學導引開發</h5>
+                            <p>003</p>
+                            <div class="develop-cards portfolio-develop-card7">
+                            </div>
+                            <div class="develop-cards-privacy">
+                                因爲保密條款細節不便公開，敬請見諒！
+                            </div>
+                        </li>
+                        <li class="portfolio-develop-card portfolio-develop-card8b">
+                            <h5>系統管理</h5>
+                            <p>004</p>
+                            <div class="develop-cards portfolio-develop-card8">
+                            </div>
+                            <div class="develop-cards-privacy">
+                                因爲保密條款細節不便公開，敬請見諒！
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- UI Prototype -->
+        <div class="portfolio-prototype-area section" id="menu3">
+            <div class="portfolio-prototype-menu">
+                <ul>
+                    <li class="portfolio-prototype-menu1 active" onclick='changePrototypeData("all")'>全部</li>
+                    <li class="portfolio-prototype-menu2" onclick='changePrototypeData("web")'>網頁</li>
+                    <li class="portfolio-prototype-menu3" onclick='changePrototypeData("software")'>軟體</li>
+                    <li class="portfolio-prototype-menu4" onclick='changePrototypeData("mobile")'>Mobile</li>
+                </ul>
+            </div>
+            <div class="portfolio-prototype-block">
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card1" data-item="web,mobile">
+                    <img src="image/ui/2021newWeb.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>公司新品牌網站</h5>
+                        <p>公司建立了一個新的企業級系統與App，是描述一個邁向低程式碼開發的產品，因此討論網站架構與Mockup。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card2" data-item="web,mobile">
+                    <img src="image/ui/2020newWeb-en.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>公司國際版的網站</h5>
+                        <p>向外擴展，公司邁向國際發展的網站，目的是希望更讓國外客戶認識我們。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card3" data-item="web">
+                    <img src="image/ui/2022newyear-prototype.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>2022年 虎躍新程</h5>
+                        <p>是一個虎年要歲序更新，感謝大家過去一年來的鼓勵與相挺，祝福各位虎躍新程與虎哩賺大錢！的版面。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card4" data-item="web">
+                    <img src="image/ui/2020newyear-prototype.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>2020年 鼠年大吉</h5>
+                        <p>是鼠年要祝福“鼠”年祝賀與期盼繼續給予支持與建議的版面設計規劃需求。
+
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card5" data-item="web">
+                    <img src="image/ui/beefnoodle.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>牛小棧</h5>
+                        <p>因為之前有配合賣牛肉麵的店家，想推廣跟更認識他們，所以發想創建牛肉麵的網站設計。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card6" data-item="web,mobile">
+                    <img src="image/ui/2020login-reddesign.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>產品 login 重新設計</h5>
+                        <p>因為之前的login頁面樸素單調，因此重新設計login的版面，讓他具有美化好的現代感。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card7" data-item="web">
+                    <img src="image/ui/gympool1.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>GYM Pool</h5>
+                        <p>從認識的朋友身邊得知，他正在經營一個破2萬人的健身房會籍轉讓平台。因為粉絲團資訊量大，很容易被洗不同的資訊洗掉，所以才覺得要創造一個平台。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card7" data-item="software">
+                    <img src="image/ui/POMODORO.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>番茄鐘 POMODORO</h5>
+                        <p>這個是配合六角學院的活動(精神時光屋)，製作的番茄鐘UI設計。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card8" data-item="Mobile,software">
+                    <img src="image/ui/music.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>音樂播放器</h5>
+                        <p>這個是配合六角學院的活動(精神時光屋)，製作的音樂播放器UI設計。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card9" data-item="Mobile">
+                    <img src="image/ui/CreditCard.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>信用卡結帳</h5>
+                        <p>這是配合Daily UI的活動。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="portfolio-prototype-card portfolio-prototype-card10" data-item="software">
+                    <img src="image/ui/color-picker–1.png" alt="">
+                    <div class="portfolio-prototype-text">
+                        <h5>Color Picker</h5>
+                        <p>重新設計的調色盤，因為原本的太單調，不方便使用</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 平面設計 -->
+        <div class="portfolio-graphicDesign-area section" id="menu4">
+            <!--  -->
+            <div class="portfolio-graphicDesign-areas portfolio-graphicDesign-area1 graphicDesignSection" id="graphicDesign1" style="background: #9cc1b7;">
+                <h4>2022新年賀卡（福虎賀新春）</h4>
+                <div class="portfolio-graphicDesign-descraption">
+                    <p>福虎賀新春</p>
+                    <p>邁入2022年（虎年），因為疫情關係，所以今年採取電子賀卡的方式寄送</p>
+                </div>
+                <div class=" portfolio-graphicDesign-image">
+                    <img src=" ./image/photo/2022design.png " alt=" ">
+                </div>
+            </div>
+            <!--  -->
+            <div class="portfolio-graphicDesign-areas portfolio-graphicDesign-area2 graphicDesignSection " id="graphicDesign2" style="background: #e3ce78; ">
+                <h4>2021新年Banner</h4>
+                <div class="portfolio-graphicDesign-descraption ">
+                    <p>金牛迎春、金牛報喜</p>
+                    <p>每年新春Banner設計，根據過往，過年的時候都會有要設計符合當年的賀詞設計</p>
+                </div>
+                <div class="portfolio-graphicDesign-image ">
+                    <img src="./image/photo/2021design.png " alt=" ">
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="portfolio-graphicDesign-areas portfolio-graphicDesign-area3 graphicDesignSection " id="graphicDesign3" style="background: #ede9e9; ">
+                <h4>研討會Banner設計</h4>
+                <div class="portfolio-graphicDesign-descraption ">
+                    <p>每年都有好幾場的研討會，都會需要廣告的圖，因此符合當場的活動標題與內容訂定設計 Banner 方向</p>
+                </div>
+                <div class="portfolio-graphicDesign-image ">
+                    <img src="./image/photo/SMNbanner.png " alt=" ">
+                </div>
+            </div>
+            <!--  -->
+            <div class="portfolio-graphicDesign-areas portfolio-graphicDesign-area4 graphicDesignSection " id="graphicDesign4" style="background: #212b2e; ">
+                <h4>中秋節Banner設計</h4>
+                <div class="portfolio-graphicDesign-descraption ">
+                    <p>祝福中秋佳節，月圓人團圓。</p>
+                    <p>在寄送每月的EDM，遇到中秋節，因此有需要製作中秋節Banner設計</p>
+                </div>
+                <div class="portfolio-graphicDesign-image ">
+                    <img src="./image/photo/2021photo-mid.png " alt=" ">
+                </div>
+            </div>
+
+        </div>
+        <!-- EDM版面 -->
+        <div class="portfolio-edmDesign-area section " id="menu6 ">
+            <div class="edmDesign-ul ">
+                <div class="edmDesign-li edmDesign-li1 ">
+                    <div class="edmDesign-tooBar ">
+                        <a href="https://www.lcnet.com.tw/Tech/EDM_USfeatures202007/newWebUs_1090715.html " target="_blank ">
+                            <i class="fa fa-link " aria-hidden="true "></i>
+                        </a>
+                    </div>
+                    <img src="image/edm/edm-en.png " alt=" ">
+                </div>
+                <div class="edmDesign-li edmDesign-li2 ">
+                    <div class="edmDesign-tooBar ">
+                        <a href="https://www.lcnet.com.tw/Tech/EDMtech202109/tech_1100914_EDM.html " target="_blank ">
+                            <i class="fa fa-link " aria-hidden="true "></i>
+                        </a>
+                    </div>
+                    <img src="image/edm/edm1.png " alt=" ">
+                </div>
+                <div class="edmDesign-li edmDesign-li3 ">
+                    <div class="edmDesign-tooBar ">
+                        <a href="https://www.lcnet.com.tw/Tech/EDMtech202110/tech_1101018_EDM_All.html " target="_blank ">
+                            <i class="fa fa-link " aria-hidden="true "></i>
+                        </a>
+                    </div>
+
+                    <img src="image/edm/edm2.png " alt=" ">
+                </div>
+                <div class="edmDesign-li edmDesign-li4 ">
+
+                    <img src="image/edm/edm3.png " alt=" ">
+                </div>
+                <div class="edmDesign-li edmDesign-li5 ">
+                    <div class="edmDesign-tooBar ">
+                        <a href="https://www.lcnet.com.tw/Tech/EDMtech202105/tech_1100518_EDM.html " target="_blank ">
+                            <i class="fa fa-link " aria-hidden="true "></i>
+                        </a>
+                    </div>
+
+                    <img src="image/edm/edm4.png " alt=" ">
+                </div>
+                <div class="edmDesign-li edmDesign-li6 ">
+                    <div class="edmDesign-tooBar ">
+                        <a href="https://www.lcnet.com.tw/Tech/EDM_USfeatures202012/newWebUs_1091223.html " target="_blank ">
+                            <i class="fa fa-link " aria-hidden="true "></i>
+                        </a>
+                    </div>
+                    <img src="image/edm/edm6.png " alt=" ">
+                </div>
+                <div class="edmDesign-li edmDesign-li7 ">
+                    <div class="edmDesign-tooBar ">
+                        <a href="https://www.lcnet.com.tw/Tech/EDMtech202103/tech_1100317_EDM.html " target="_blank ">
+                            <i class="fa fa-link " aria-hidden="true "></i>
+                        </a>
+                    </div>
+
+                    <img src="image/edm/edm5.png " alt=" ">
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+
+    <!-- paroller.js -->
+    <script src="js/jquery.paroller.js "></script>
+    <script src="js/design.js "></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.jumbotron').paroller();
+    </script>
+</body>
+
+</html>

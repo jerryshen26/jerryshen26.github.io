@@ -3,6 +3,7 @@ window.onload = function() {
     var checkClick = true;
     var sectionIds = {};
     var graphicSectionIds = {};
+    var resumeSectionIds = {};
 
 
     initTyping();
@@ -48,6 +49,11 @@ window.onload = function() {
         graphicSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
     })
 
+    $(".resumeSection").each(function(){
+        var $this = $(this);
+        resumeSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
+    })
+
     $(window).scroll(function(evet) {
         if (checkClick) {
             var scrolled = $(this).scrollTop();
@@ -65,10 +71,10 @@ window.onload = function() {
                 }
             }
 
+            var graphicArea = $("#menu4").height();
             for (key in graphicSectionIds) {
                 var keyDiv = document.getElementById(key);
                 var computedStyle = document.defaultView.getComputedStyle(keyDiv, null);
-                var graphicArea = $("#menu4").height();
                 var endGraphicHeight = graphicSectionIds["graphicDesign1"] + graphicArea;
                 var color = computedStyle.color;
 
@@ -76,20 +82,29 @@ window.onload = function() {
                 if (scrolled >= graphicSectionIds[key]) {
                     if (scrolled > endGraphicHeight) {
                         $(".portfolio-banner-background").css("background", "");
-                        $(".portfolio-list").css({ "color": "", });
+                        $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "", });
 
                     } else {
                         var getBackground = computedStyle.backgroundColor;
                         $(".portfolio-banner-background").css("background", getBackground);
-                        $(".portfolio-list").css({ "color": color, });
+                        $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": color, });
                     }
 
                 } else if (scrolled < graphicSectionIds["graphicDesign1"]) {
 
                     $(".portfolio-banner-background").css("background", "");
-                    $(".portfolio-list").css({ "color": "", });
+                    $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "", });
 
                 }
+            }
+
+            var resumeArea = $("#menu2").height();
+            for(key in resumeSectionIds) {
+                if(scrolled>resumeSectionIds[key]&&scrolled<=(resumeSectionIds[key]+resumeArea))
+                $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "#fff" });
+                else 
+                $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "#000", });
+
             }
 
         }
@@ -138,37 +153,4 @@ function fabClickFun() {
             }
         });
     }
-}
-
-
-
-function changePrototypeData(type) {
-    var $prototypeCard = $(".portfolio-prototype-block .portfolio-prototype-card");
-
-    $prototypeCard.fadeIn(0);
-    $(".portfolio-menu li")[2].click();
-    if (type == "all")
-        return
-    $prototypeCard.each(function() {
-        var data = $(this).data("item");
-        var boolCheck = checkData(data, type);
-
-        debugger
-        if (!boolCheck) {
-            $(this).fadeOut(0);
-        }
-    });
-
-}
-
-function checkData(data, type) {
-    var datasplit = data.split(",");
-    var checkContent = false;
-    datasplit.forEach(function(d) {
-        if (d == type) {
-            debugger
-            checkContent = true;
-        }
-    });
-    return checkContent;
 }
