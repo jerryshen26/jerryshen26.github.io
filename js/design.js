@@ -8,8 +8,6 @@ function changePrototypeData(type) {
     $prototypeCard.each(function() {
         var data = $(this).data("item");
         var boolCheck = checkData(data, type);
-
-        debugger
         if (!boolCheck) {
             $(this).fadeOut(0);
         }
@@ -28,3 +26,4 @@ function checkData(data, type) {
     });
     return checkContent;
 }
+

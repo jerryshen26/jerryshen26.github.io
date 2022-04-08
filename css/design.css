@@ -60,6 +60,9 @@ body {
     font-size: 18px;
     padding-top: 3px;
 }
+.portfolio-content span{
+    margin-left: 10px;
+}
 
 .portfolio-list ul li {
     margin-top: 40px;
@@ -195,6 +198,22 @@ body {
 .portfolio-develop-card2 h5,
 .portfolio-develop-card2 p {
     color: #1a1a1a;
+}
+
+.portfolio-develop-card9 {
+    color: #111111;
+    background-size: auto 100%;
+    background-image: url(../image/develop/project-1.jpg);
+    background-color: #35261e;
+}
+
+.portfolio-develop-card9 h5,
+.portfolio-develop-card9 p {}
+
+.portfolio-develop-card4 {
+    color: #111111;
+    background-image: url(../image/develop/2020newyear.png);
+    background-color: #f9f8eb;
 }
 
 .portfolio-develop-card3 {

@@ -135,6 +135,10 @@ window.onload = function() {
     $(".portfolio-graphicDesign-area1,.portfolio-graphicDesign-area2,.portfolio-graphicDesign-area3,.portfolio-graphicDesign-area4").css({ "position": "sticky", "top": "0" });
 
 
+    $(".portfolio-design-list li").mousemove(function(e){
+        var data = $(this).data("item");
+        changePhotoImage(data,this);
+    });
 }
 
 function fabClickFun() {
@@ -153,4 +157,50 @@ function fabClickFun() {
             }
         });
     }
+}
+
+
+
+
+
+function changePhotoImage(type,thisLi){
+
+    var image = "https://www.lcnet.com.tw/img/home/sv_marianne-stok-teemu-paananen.jpg";
+
+    switch(type){
+        case "develop":{
+            image = "image/home/webDevelop.png";
+            changeImage(image,thisLi);
+            break;
+        }
+        case "ui":{
+            image = "image/home/uiPrototype.png";
+            changeImage(image,thisLi);
+            break;
+        }
+        case "graphicDesign":{
+            image = "image/home/graphicDesign.png";
+            changeImage(image,thisLi);
+            break;
+        }
+        case "edm":{
+            image = "image/home/edm.png";
+            changeImage(image,thisLi);
+            break;
+        }
+        default:{
+            image = "image/home/allDesign.png";
+            changeImage(image,thisLi);
+            break;
+        }
+
+    }
+
+}
+
+function changeImage(photo,li){
+    
+    $(li).siblings().removeClass("active");
+    $(li).addClass("active");
+    $(".portfolio-design-photo").css("background-image",'url('+ photo +')');
 }
