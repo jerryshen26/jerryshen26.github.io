@@ -130,7 +130,7 @@ body {
     transition: all 0.2s;
 }
 .portfolio-develop-card:hover{
-    background-size: 110%;
+    background-size: auto 110%;
 }
 .portfolio-develop-card:hover .develop-cards-privacy{
     
