@@ -50,7 +50,8 @@ body {
     box-sizing: border-box;
     color: #161616;
 }
-.portfolio-content a{
+
+.portfolio-content a {
     color: inherit;
     text-decoration: none;
 }
@@ -60,7 +61,8 @@ body {
     font-size: 18px;
     padding-top: 3px;
 }
-.portfolio-content span{
+
+.portfolio-content span {
     margin-left: 10px;
 }
 
@@ -70,7 +72,7 @@ body {
     transform: scale(1);
 }
 
-.portfolio-list ul li:hover{
+.portfolio-list ul li:hover {
     color: #3683f9;
     text-shadow: 0 0 2px #40404029;
 }
@@ -84,7 +86,6 @@ body {
     padding-top: 2px;
     display: table;
 }
-
 
 .portfolio-develop-area {
     width: 75%;
@@ -129,12 +130,12 @@ body {
     box-sizing: border-box;
     transition: all 0.2s;
 }
-.portfolio-develop-card:hover{
+
+.portfolio-develop-card:hover {
     background-size: auto 110%;
 }
-.portfolio-develop-card:hover .develop-cards-privacy{
-    
-}
+
+.portfolio-develop-card:hover .develop-cards-privacy {}
 
 .portfolio-develop-card h5 {
     font-size: 26px;
@@ -153,7 +154,7 @@ body {
 .portfolio-develop-card {
     box-sizing: border-box;
     padding: 15px;
-    background-size: 100%;
+    background-size: auto 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-color: #a2c7ed;
@@ -202,7 +203,6 @@ body {
 
 .portfolio-develop-card9 {
     color: #111111;
-    background-size: auto 100%;
     background-image: url(../image/develop/project-1.jpg);
     background-color: #35261e;
 }
@@ -350,7 +350,8 @@ body {
     box-sizing: border-box;
     transition: all 0.2s;
 }
-.portfolio-prototype-card:hover{
+
+.portfolio-prototype-card:hover {
     box-shadow: 0 0 5px #00a2ff88;
 }
 
@@ -548,5 +549,54 @@ body {
     }
     .portfolio-prototype-card {
         width: 45%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .portfolio-menu {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0;
+        z-index: 100;
+    }
+    .portfolio-list {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 0;
+        background: #4fa0bb;
+        overflow: auto;
+    }
+    .portfolio-list ul {
+        width: 150%;
+        display: table;
+        overflow: auto;
+        background: #4fa0bb;
+        box-sizing: border-box;
+        padding: 0 5%;
+    }
+    .portfolio-menu-content {
+        width: 65%;
+        overflow: auto;
+        display: inline-table;
+    }
+    .portfolio-content {
+        background: #4fa0bb;
+        padding: 1.5% 5% 0;
+        box-sizing: border-box;
+        display: inline-table;
+    }
+    .portfolio-list ul li {
+        display: table-cell;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+    .portfolio-develop-area {
+        padding: 130px 25px 50px;
+        left: 0;
+    }
+    .portfolio-develop-card {
+        display: block;
     }
 }
