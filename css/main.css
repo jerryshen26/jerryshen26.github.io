@@ -6,7 +6,7 @@
 }
 
 body {
-    min-width: 1000px;
+    min-width: 1300px;
 }
 
 .typingCursorWhite {
@@ -230,26 +230,27 @@ body {
 
 /* resume */
 .portfolio-resume-area{
-    background-color: #F1BD00;
-    display: table;
-
+    background-color: #444B59;
+    display: block;
+    position: relative;
 }
 
 
 .portfolio-resume-area .resumeSide{
     height: 100%;
-    width: 25%;
+    width: 20vw;
     background: #444B59;
-    display: table-cell;
+    display: inline-block;
 }
 .portfolio-resume-area .resumeSection{
     height: 100%;
-    width: 74.5%;
-    display: table-cell;
+    width: 79.5vw;
+    display: inline-block;
     color: white;
     vertical-align: top;
     box-sizing: border-box;
     padding: 3% 5%;
+    background-color: #F1BD00;
 }
 
 .resumeSection h4{
@@ -293,7 +294,7 @@ body {
 
 .resume-timeline::before{
     content: "";
-    height: 95%;
+    height: 96%;
     background: #444B59;
     width: 2px;
     position: absolute;
@@ -307,7 +308,7 @@ body {
     box-sizing: border-box;
     z-index: 20;
     position: relative;
-    margin-left: 105px;
+    margin-left: 9.2%;
 }
 
 .resume-block .resume-timeline li::before{
@@ -319,7 +320,7 @@ body {
     vertical-align: top;   
     border: 2px solid #0089FF;
     position: absolute;
-    left: -63px;
+    left: -5.7%;
     margin-top: 12px;
 }
 
