@@ -7,6 +7,7 @@ window.onload = function() {
 
 
     initTyping();
+    fabClickFun();
 
     function initTyping() {
         let lineIndex = 0;
@@ -125,7 +126,7 @@ window.onload = function() {
         });
     });
 
-    fabClickFun();
+
 
     $(".portfolio-prototype-menu li").click(function() {
         $(".portfolio-prototype-menu li").removeClass("active");
