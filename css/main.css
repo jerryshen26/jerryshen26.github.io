@@ -231,7 +231,8 @@ body {
 /* resume */
 .portfolio-resume-area{
     background-color: #444B59;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -244,7 +245,7 @@ body {
 }
 .portfolio-resume-area .resumeSection{
     height: 100%;
-    width: 79.5vw;
+    width: 79vw;
     display: inline-block;
     color: white;
     vertical-align: top;
