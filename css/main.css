@@ -532,7 +532,7 @@ progress{
         width: 130%;
         display: table;
         overflow: auto;
-        background: #4fa0bb;
+        background: #ffffffb8;
         box-sizing: border-box;
         padding: 0 5%;
     }
@@ -590,5 +590,9 @@ progress{
     }
     .portfolio-design-list li{
         width: 100%;
+    }
+
+    .resumeSection .resumeCard{
+        padding: 4%;
     }
 }

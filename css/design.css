@@ -359,13 +359,26 @@ body {
     width: 100%;
 }
 
+.portfolio-prototype-header-block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.portfolio-prototype-header-block img{
+    width: 28px;
+    vertical-align: middle;
+
+}
+
 .portfolio-prototype-text {
     padding: 15px 20px 30px;
 }
 
 .portfolio-prototype-text h5 {
     font-size: 20px;
-    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .portfolio-prototype-text p {

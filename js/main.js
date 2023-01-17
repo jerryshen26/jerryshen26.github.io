@@ -1,4 +1,6 @@
-window.onload = function() {
+var winWidth = $(window).width();
+
+window.onload = function () {
 
     var checkClick = true;
     var sectionIds = {};
@@ -42,22 +44,22 @@ window.onload = function() {
     }
 
 
-    $(".section").each(function() {
+    $(".section").each(function () {
         var $this = $(this);
         sectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
     });
 
-    $(".graphicDesignSection").each(function() {
+    $(".graphicDesignSection").each(function () {
         var $this = $(this);
         graphicSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
     })
 
-    $(".resumeSection").each(function() {
+    $(".resumeSection").each(function () {
         var $this = $(this);
         resumeSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
     })
 
-    $(window).scroll(function(evet) {
+    $(window).scroll(function (evet) {
         if (checkClick) {
             var scrolled = $(this).scrollTop();
             var windowHeight = $(window).innerHeight();
@@ -74,46 +76,49 @@ window.onload = function() {
                 }
             }
 
-            var graphicArea = $("#menu4").height();
-            for (key in graphicSectionIds) {
-                var keyDiv = document.getElementById(key);
-                var computedStyle = document.defaultView.getComputedStyle(keyDiv, null);
-                var endGraphicHeight = graphicSectionIds["graphicDesign1"] + graphicArea;
-                var color = computedStyle.color;
+            if (winWidth >= 1000) {
+
+                var graphicArea = $("#menu4").height();
+                for (key in graphicSectionIds) {
+                    var keyDiv = document.getElementById(key);
+                    var computedStyle = document.defaultView.getComputedStyle(keyDiv, null);
+                    var endGraphicHeight = graphicSectionIds["graphicDesign1"] + graphicArea;
+                    var color = computedStyle.color;
 
 
-                if (scrolled >= graphicSectionIds[key]) {
-                    if (scrolled > endGraphicHeight) {
+                    if (scrolled >= graphicSectionIds[key]) {
+                        if (scrolled > endGraphicHeight) {
+                            $(".portfolio-banner-background").css("background", "");
+                            $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "", });
+
+                        } else {
+                            var getBackground = computedStyle.backgroundColor;
+                            $(".portfolio-banner-background").css("background", getBackground);
+                            $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": color, });
+                        }
+
+                    } else if (scrolled < graphicSectionIds["graphicDesign1"]) {
+
                         $(".portfolio-banner-background").css("background", "");
                         $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "", });
 
-                    } else {
-                        var getBackground = computedStyle.backgroundColor;
-                        $(".portfolio-banner-background").css("background", getBackground);
-                        $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": color, });
                     }
 
-                } else if (scrolled < graphicSectionIds["graphicDesign1"]) {
+                }
 
-                    $(".portfolio-banner-background").css("background", "");
-                    $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "", });
+                var resumeArea = $("#menu2").height();
+                for (key in resumeSectionIds) {
+                    if (scrolled > resumeSectionIds[key] && scrolled <= (resumeSectionIds[key] + resumeArea))
+                        $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "#fff" });
+                    else
+                        $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "#000", });
 
                 }
             }
-
-            var resumeArea = $("#menu2").height();
-            for (key in resumeSectionIds) {
-                if (scrolled > resumeSectionIds[key] && scrolled <= (resumeSectionIds[key] + resumeArea))
-                    $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "#fff" });
-                else
-                    $(".portfolio-list,.portfolio-list .portfolio-content a").css({ "color": "#000", });
-
-            }
-
         }
     });
 
-    $(".portfolio-menu li").click(function() {
+    $(".portfolio-menu li").click(function () {
         $(this).addClass('active');
         $(this).siblings().removeClass('active')
 
@@ -121,14 +126,14 @@ window.onload = function() {
         var name = $(this).attr('data-id');
         var id = "#" + name;
         var top = $(id).first().offset().top;
-        $('html, body').animate({ scrollTop: top + 'px' }, 100, null, function() {
+        $('html, body').animate({ scrollTop: top + 'px' }, 100, null, function () {
             checkClick = true;
         });
     });
 
 
 
-    $(".portfolio-prototype-menu li").click(function() {
+    $(".portfolio-prototype-menu li").click(function () {
         $(".portfolio-prototype-menu li").removeClass("active");
         $(this).addClass("active");
     })
@@ -138,17 +143,17 @@ window.onload = function() {
     $(".portfolio-graphicDesign-area1,.portfolio-graphicDesign-area2,.portfolio-graphicDesign-area3,.portfolio-graphicDesign-area4").css({ "position": "sticky", "top": "0" });
 
 
-    $(".portfolio-design-list li").mousemove(function(e) {
+    $(".portfolio-design-list li").mousemove(function (e) {
         var data = $(this).data("item");
         changePhotoImage(data, this);
     });
 }
 
 function fabClickFun() {
-    var winWidth = $(window).width();
+
     // $(".edm-nav-toggle,.fabb").unbind();
-    if (winWidth <= 1000) {
-        $(".portfolio-nav-menu,.fabb").click(function() {
+    if (winWidth <= 1000 && 500 <= winWidth) {
+        $(".portfolio-nav-menu,.fabb").click(function () {
             if ($(".portfolio-menu").is(":visible")) {
                 $(".portfolio-menu").fadeOut(100);
                 $(".portfolio-nav-toggle").removeClass("edm-nav-toggle-cancel");
