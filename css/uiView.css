@@ -70,19 +70,9 @@
 /* 研究與討論區塊 */
 
 .ui-view-research {
-    background-color: #F33433;
     color: #ffffff;
 }
 
-.ui-research-block::before {
-    content: "01";
-    font-size: 120px;
-    font-weight: bold;
-    opacity: 0.6;
-    position: absolute;
-    top: 20px;
-    right: 0;
-}
 
 .ui-research-block {
     width: 60%;
@@ -120,18 +110,9 @@
 
 .ui-view-design {
     background-color: #FBF4F4;
-    color: #F33433;
 }
 
-.ui-design-block::before {
-    content: "02";
-    font-size: 120px;
-    font-weight: bold;
-    opacity: 0.6;
-    position: absolute;
-    top: 20px;
-    right: 0;
-}
+
 
 .ui-design-block {
     width: 60%;
@@ -142,7 +123,6 @@
 
 .ui-design-block h4 {
     font-size: 30px;
-    border-left: 3px solid #F33433;
     padding-left: 10px;
 }
 
@@ -213,17 +193,6 @@
 
 .ui-view-focus {
     background-color: #ffffff;
-    color: #F33433;
-}
-
-.ui-focus-block::before {
-    content: "03";
-    font-size: 120px;
-    font-weight: bold;
-    opacity: 0.6;
-    position: absolute;
-    top: 20px;
-    right: 0;
 }
 
 .ui-focus-block {
@@ -235,7 +204,6 @@
 
 .ui-focus-block h4 {
     font-size: 30px;
-    border-left: 3px solid #F33433;
     padding-left: 10px;
 }
 
@@ -281,3 +249,39 @@
 .ui-focus-content .ui-focus-old h6 {
     color: #313131;
 }
+
+/* prototype區塊 */
+.ui-view-prototype{
+    background-color: #ffffff;
+}
+
+.ui-prototype-block{
+    width: 60%;
+    padding: 100px 0 50px;
+    margin: auto;
+    position: relative;
+}
+
+.ui-prototype-block h4 {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+
+/* 共同的 */
+.ui-test .ui-prototype-block h4,
+.ui-test  .ui-focus-block h4,
+.ui-test  .ui-design-block h4 {
+    border-left: 3px solid #F33433;
+}
+
+.ui-test .ui-view-prototype,
+.ui-test .ui-view-focus,
+.ui-test .ui-view-design{
+    color: #F33433;
+}
+
+.ui-test .ui-view-research {
+    background-color: #F33433;
+}
+
