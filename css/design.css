@@ -365,6 +365,16 @@ body {
     margin-bottom: 15px;
 }
 
+.portfolio-prototype-header-block .portfolio-prototype-button{
+    height: 28px;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .portfolio-prototype-header-block img{
     width: 28px;
     vertical-align: middle;

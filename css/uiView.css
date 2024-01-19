@@ -18,6 +18,25 @@
     align-items: center;
 }
 
+.ui-view-left .ui-icon-block{
+    display: flex;
+}
+
+.ui-view-left .ui-banner-content h4{
+    
+}
+
+.ui-view-left  .ui-banner-content p{
+    margin-bottom: 15px;
+}
+
+.ui-view-left .ui-icon-block img{
+    width: 48px;
+    height: 48px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
 .ui-view-right {
     width: 64%;
     height: 100%;
@@ -42,6 +61,12 @@
 .ui-goBack-button p {
     display: inline-block;
     margin-left: 5px;
+}
+
+.ui-goBack-button a{
+    text-decoration: none; 
+    cursor: pointer;   
+    color: #313131;
 }
 
 .ui-banner-content {
@@ -100,10 +125,17 @@
     font-size: 26px;
     font-weight: normal;
 }
+.ui-research-content li h6{
+    font-size: 16px;
+    margin-top: 10px;
+}
 
 .ui-research-content li p {
     font-size: 16px;
+    line-height: 28px;
 }
+
+
 
 
 /* 研究與討論區塊 */
@@ -154,9 +186,11 @@
 }
 
 .ui-design-prototype img {
-    width: 29%;
-    margin: 1%;
+    width: 30%;
+    margin: 10px;
     vertical-align: top;
+    box-shadow: 0 0 5px #2a2a2a88;
+    box-sizing: border-box;
 }
 
 .ui-design-prototype-learnmore {
@@ -188,6 +222,55 @@
     border: 1px solid #5491EE;
 }
 
+/* 色彩計畫 */
+.ui-view-colorScheme{
+    background-color: #ffffff;    
+}
+
+.ui-colorScheme-block {
+    width: 60%;
+    padding: 100px 0 50px;
+    margin: auto;
+    position: relative;
+}
+
+.ui-colorScheme-block h4 {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.ui-colorScheme-content {
+    padding: 20px 50px;
+    position: relative;
+}
+
+.ui-colorScheme-areas{
+    margin: 20px 0 40px;
+}
+
+.ui-colorScheme-areas ul{
+    display: flex;
+}
+
+.ui-colorScheme-areas ul li{
+    padding: 10px 15px;
+}
+
+.ui-colorScheme-content h5{
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.ui-colorScheme-content  .ui-colorScheme-shapes{
+    width: 100px;
+    height: 100px;
+    background: #F33433;
+}
+
+.ui-colorScheme-block .ui-colorScheme-content h5{
+    color: #313131;
+}
 
 /* 設計重點 */
 
@@ -252,14 +335,17 @@
 
 /* prototype區塊 */
 .ui-view-prototype{
-    background-color: #ffffff;
+    background-color: #F33433;
 }
 
 .ui-prototype-block{
-    width: 60%;
-    padding: 100px 0 50px;
+    width: 100%;
+    padding: 10px;
     margin: auto;
     position: relative;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
 }
 
 .ui-prototype-block h4 {
@@ -267,18 +353,23 @@
     padding-left: 10px;
 }
 
-
 /* 共同的 */
+.ui-test .ui-colorScheme-block h4,
 .ui-test .ui-prototype-block h4,
 .ui-test  .ui-focus-block h4,
 .ui-test  .ui-design-block h4 {
     border-left: 3px solid #F33433;
 }
-
+.ui-test .ui-colorScheme-block,
 .ui-test .ui-view-prototype,
 .ui-test .ui-view-focus,
 .ui-test .ui-view-design{
     color: #F33433;
+}
+
+.ui-test .ui-view-prototype h4{
+    color: #ffffff;
+    border-left: 3px solid #ffffff;
 }
 
 .ui-test .ui-view-research {
