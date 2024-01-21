@@ -18,6 +18,29 @@
     align-items: center;
 }
 
+.ui-participates{
+    display: inline-block;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 0 2px #2e2e2e69;
+    margin: 3px;
+}
+
+.ui-participate-uiux{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.ui-participate-design{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);    
+}
+.ui-participate-flowChart{
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);    
+    color: #fff;
+}
+.ui-participate-webDevelop{
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);    
+}
+
 .ui-view-left .ui-icon-block{
     display: flex;
 }
@@ -46,6 +69,8 @@
     background-image: url(../image/develop/2020newyear.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
+    border-left: 1px solid #a0a0a0;
+    box-sizing: border-box;
 }
 
 .ui-goBack-button {
@@ -148,7 +173,7 @@
 
 .ui-design-block {
     width: 60%;
-    padding: 100px 0 50px;
+    padding: 100px 0;
     margin: auto;
     position: relative;
 }
@@ -180,6 +205,7 @@
 
 .ui-design-prototype {
     padding-top: 100px;
+    margin-bottom: 100px;
     width: 100%;
     text-align: center;
     overflow: hidden;
@@ -263,8 +289,9 @@
 }
 
 .ui-colorScheme-content  .ui-colorScheme-shapes{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
     background: #F33433;
 }
 
