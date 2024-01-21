@@ -102,7 +102,7 @@
 .ui-banner-content h3 {
     margin-bottom: 0;
     margin-bottom: 10px;
-    font-size: 36px;
+    font-size: 70px;
 }
 
 .ui-banner-content ul li {
@@ -124,31 +124,71 @@
 }
 
 
-.ui-research-block {
-    width: 60%;
+.ui-research-block,.ui-design-block,.ui-userReviews-block,.ui-colorScheme-block,.ui-focus-block,.ui-prototype-block {
     padding: 100px 0 150px;
     margin: auto;
     position: relative;
 }
 
-.ui-research-block h4 {
+.ui-research-block::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 120px solid;
+    position: absolute;
+    border-color: #c41a19  transparent transparent #c41a19 ;
+    top: 0;
+    transform: scale(2.5,1);
+}
+
+.ui-design-block::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 120px solid;
+    position: absolute;
+    border-color: #ffd8e3  transparent transparent #ffd8e3;
+    top: 0;
+    transform: scale(2.5,1);
+}
+/* ,.ui-design-block,.ui-userReviews-block,.ui-colorScheme-block,.ui-focus-block,.ui-prototype-block */
+
+.ui-research-block h4,.ui-design-block h4,.ui-userReviews-block h4,.ui-colorScheme-block h4,.ui-focus-block h4 {
     font-size: 30px;
     border-left: 3px solid #ffffff;
     padding-left: 10px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    line-height: 30px;
 }
 
-.ui-research-content {
+.ui-userReviews-block h4 span{
+    font-size: 20px;
+    color: #000000;
+}
+
+.ui-research-content,.ui-design-content,.ui-userReviews-content,.ui-colorScheme-content,.ui-focus-content {
     padding: 20px 50px;
+    width: 60%;
+    margin: auto;
 }
 
 .ui-research-content li {
     margin-top: 30px;
 }
 
+.ui-research-content .ui-research-content-list li{
+    margin: 10px 20px;
+    list-style: circle;
+}
+
 .ui-research-content li h5 {
     margin-bottom: 10px;
-    font-size: 26px;
-    font-weight: normal;
+    font-size: 36px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
 }
 .ui-research-content li h6{
     font-size: 16px;
@@ -160,8 +200,93 @@
     line-height: 28px;
 }
 
+/* 用戶評論 */
+.ui-view-userReviews {
+    background-color: #f0f0f4;
+}
 
+.ui-userReviews-content li {
+    margin-top: 30px;
+}
 
+.ui-userReviews-content li h5 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    background: linear-gradient(90deg, #2A61FC 0.01%, #0CE898 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.ui-userReviews-content li p {
+    font-size: 16px;
+    color: #313131;
+}
+
+.ui-userReviews-content .ui-view-users{
+    display: flex;
+    padding: 20px 0;
+} 
+
+.ui-userReviews-content .ui-view-users-right{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.ui-userReviews-content .ui-view-users-left{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ui-userReviews-content .ui-view-users img{
+    width: 100px;
+    height: 100px;
+}
+
+.ui-userReviews-content .ui-view-users .ui-view-users-descraption{
+    width: 65%;
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 0px 40px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #0000003b;
+    position: relative;
+}
+
+.ui-userReviews-content .ui-view-users .ui-view-users-descraption-important{
+    background-color: #4775F7;
+    color: #fff;
+}
+
+.ui-userReviews-content .ui-view-users .ui-view-users-descraption::after{
+    content: "";
+    border: 30px solid;
+    position: absolute;
+}
+.ui-userReviews-content .ui-view-users-right .ui-view-users-descraption::after{
+    border-color: transparent transparent #fff #fff;
+    bottom: 30px;
+    right: -30px;
+}
+.ui-userReviews-content .ui-view-users-left .ui-view-users-descraption::after{
+    border-color: #fff #fff transparent transparent ;
+    top: 30px;
+    left: -30px;
+}
+
+.ui-userReviews-content .ui-view-users-right .ui-view-users-descraption-important::after{
+    border-color: transparent transparent #4775F7 #4775F7;
+}
+
+.ui-userReviews-content .ui-view-users .ui-view-users-descraption h5{
+    font-size: 28px;
+    line-height: 26px; /* 92.857% */
+}
+
+.ui-userReviews-content .ui-view-users .ui-view-users-descraption p{
+    font-size: 22px;
+    margin-top: 10px;
+}
 
 /* 研究與討論區塊 */
 
@@ -169,32 +294,30 @@
     background-color: #FBF4F4;
 }
 
-
-
-.ui-design-block {
-    width: 60%;
-    padding: 100px 0;
-    margin: auto;
+.ui-view-design .ui-design-block .ui-design-content h4{
+    display: block;
     position: relative;
-}
-
-.ui-design-block h4 {
-    font-size: 30px;
-    padding-left: 10px;
-}
-
-.ui-design-content {
-    padding: 20px 50px;
-    position: relative;
+    border: none;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    margin-bottom: 50px;
+    font-size: 36px;
+    background: linear-gradient(90deg, #2A61FC 0.01%, #0CE898 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .ui-design-content li {
     margin-top: 30px;
 }
 
+
 .ui-design-content li h5 {
     margin-bottom: 10px;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: normal;
 }
 
@@ -205,7 +328,6 @@
 
 .ui-design-prototype {
     padding-top: 100px;
-    margin-bottom: 100px;
     width: 100%;
     text-align: center;
     overflow: hidden;
@@ -221,11 +343,12 @@
 
 .ui-design-prototype-learnmore {
     color: #313131;
-    padding: 50px 0;
+    padding: 300px 0 50px;
     text-align: center;
     background: linear-gradient(0deg, #fbf4f4 0%, #fbf4f4 70%, transparent 100%);
     bottom: 15px;
     position: absolute;
+    left: 0;
     width: 100%;
 }
 
@@ -253,23 +376,6 @@
     background-color: #ffffff;    
 }
 
-.ui-colorScheme-block {
-    width: 60%;
-    padding: 100px 0 50px;
-    margin: auto;
-    position: relative;
-}
-
-.ui-colorScheme-block h4 {
-    font-size: 30px;
-    padding-left: 10px;
-}
-
-.ui-colorScheme-content {
-    padding: 20px 50px;
-    position: relative;
-}
-
 .ui-colorScheme-areas{
     margin: 20px 0 40px;
 }
@@ -284,7 +390,7 @@
 
 .ui-colorScheme-content h5{
     margin-bottom: 10px;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: normal;
 }
 
@@ -303,18 +409,52 @@
 
 .ui-view-focus {
     background-color: #ffffff;
-}
-
-.ui-focus-block {
-    width: 60%;
-    padding: 100px 0 50px;
-    margin: auto;
     position: relative;
+}
+.ui-view-focus-half::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #2A61FC;
+    right: 0;
+    top: 0;
 }
 
 .ui-focus-block h4 {
     font-size: 30px;
     padding-left: 10px;
+}
+
+.ui-view-focus-half .ui-focus-block .ui-focus-content{
+
+}
+.ui-view-focus .ui-wait{
+    color: #fff;
+    width: 100%;
+    padding: 100px 0 50px;
+    text-align: center;
+    background: linear-gradient(0deg, #2b61fc 0%, #161b27 70%, transparent 100%);
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+}
+
+.ui-view-focus-half .ui-focus-content li p{
+    color: #fff;
+}
+
+.ui-view-focus-half .ui-focus-content li p span{
+    background: #fff;
+    border-radius: 15px;
+    padding: 3px;
+    color: #2b61fc;
+    margin: auto;
+    line-height: 40px;
+}
+
+.ui-view-focus-half .ui-focus-content .ui-focus-images h6{
+    color: #fff;
 }
 
 .ui-focus-content {
@@ -325,13 +465,21 @@
     justify-content: space-between;
 }
 
+.ui-view-focus-half .ui-focus-content-redesign{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+
 .ui-focus-content li {
     margin-top: 30px;
 }
 
 .ui-focus-content li h5 {
     margin-bottom: 10px;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: normal;
 }
 
@@ -348,6 +496,21 @@
 .ui-focus-content .ui-focus-images img {
     border-radius: 10px;
     box-shadow: 0 0 4px hsla(0, 0%, 19%, 0.2);
+    width: 15vw;
+}
+
+.ui-view-focus-half .ui-focus-content .ui-focus-images img{
+    width: 100%;
+}
+
+.ui-view-focus-half .ui-focus-content .ui-focus-images{
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ui-view-focus-half .ui-focus-content .ui-focus-new{
+
 }
 
 .ui-focus-content h6 {
@@ -366,7 +529,7 @@
 }
 
 .ui-prototype-block{
-    width: 100%;
+    width: 70%;
     padding: 10px;
     margin: auto;
     position: relative;
@@ -385,7 +548,7 @@
 .ui-test .ui-prototype-block h4,
 .ui-test  .ui-focus-block h4,
 .ui-test  .ui-design-block h4 {
-    border-left: 3px solid #F33433;
+    border-left: 3px solid #000;
 }
 .ui-test .ui-colorScheme-block,
 .ui-test .ui-view-prototype,

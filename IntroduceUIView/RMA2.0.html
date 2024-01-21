@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERMA2.0專案</title>
+    <link rel="stylesheet" href="../css/uiView.css" />
+    <script src="../js/fontawesome-all.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-N0N5SG9CNG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-N0N5SG9CNG");
+    </script>
+  </head>
+
+  <style>
+    .ui-banner-title span {
+      background: linear-gradient(
+        to right,
+        #4775f7 0%,
+        #4775f7 50%,
+        #000000 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .ui-view-right {
+      background-image: url(../image/banner/2023-erma2.0.png);
+      background-color: bisque;
+      background-size: 100%;
+    }
+    .ui-test .ui-view-research {
+      background-color: #2a61fc;
+    }
+    .ui-test .ui-userReviews-block h4 {
+      color: #2a61fc;
+      border-left: 3px solid #000000;
+    }
+
+    .ui-research-block::before {
+      border-color: #352aaf transparent transparent #352aaf;
+    }
+
+    .ui-design-block::before {
+    border-color: #C9E5FA transparent transparent #C9E5FA;
+}
+    .ui-view-design {
+      background: #fff;
+    }
+    .ui-test .ui-view-design,.ui-test .ui-colorScheme-block,.ui-test .ui-view-focus {
+      color: #2A61FC;
+    }
+
+    .ui-view-focus{
+      background: #161B27;
+    }
+    .ui-test .ui-focus-block h4{
+      color: #fff;
+      border-left-color: #fff;
+    }
+
+    .ui-test .ui-view-prototype{
+      background-color: #2b61fc;
+    }
+  </style>
+
+  <body>
+    <div class="ui-test">
+      <div class="ui-view-banner">
+        <div class="ui-view-left">
+          <div class="ui-goBack-button">
+            <a href="../design.html">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              <p>回首頁</p>
+            </a>
+          </div>
+          <div class="ui-banner-content">
+            <h3 class="ui-banner-title"><span>ERMA2.0</span></h3>
+            <p style="font-weight: bold">ERMA是一套機器維修/送修的服務平台</p>
+            <p>
+              ERMA2.0是一個在改進送修/維修服務流程的系統，透過重新設計和優化UI/UX，以滿足現代操作模式的需求。這個專案的目標是提高系統的直覺性和使用者體驗，同時保留並加強原有的功能性。
+            </p>
+            <ul>
+              <li>
+                <h4>使用工具</h4>
+                <div class="ui-icon-block">
+                  <img src="../image/icon/FIGMA.png" alt="Adobe XD" />
+                  <img src="../image/icon/AI.png" alt="Adobe Illustrator" />
+                  <img src="../image/icon/PS.png" alt="Adobe Photoshop" />
+                  <img src="../image/icon/Miro.png" alt="Miro" />
+                </div>
+              </li>
+              <li>
+                <h4>開發</h4>
+                <div class="ui-icon-block">
+                  <img src="../image/icon/HTML5.png" alt="HTML5" />
+                  <img src="../image/icon/CSS3.png" alt="CSS3" />
+                  <img src="../image/icon/JQuery.png" alt="JQuery" />
+                  <img src="../image/icon/JS.png" alt="Javascript" />
+                  <img src="../image/icon/visual studio.png" alt="Javascript" />
+                </div>
+              </li>
+              <li>
+                <h4>參與部分</h4>
+                <div class="ui-participates ui-participate-uiux">
+                  UI/UX Design
+                </div>
+                <div class="ui-participates ui-participate-design">
+                  視覺版面設計
+                </div>
+                <div class="ui-participates ui-participate-flowChart">
+                  Flow Chart
+                </div>
+                <span class="ui-participates ui-participate-webDevelop"
+                  >網頁切版/開發</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui-view-right"></div>
+      </div>
+      <div class="ui-view-research">
+        <div class="ui-research-block">
+          <h4>背景</h4>
+          <div class="ui-research-content">
+            <ul>
+              <li>
+                <h5>為什麼要重新設計</h5>
+                <p>
+                  ERMA2.0
+                  客戶服務維修系統，長期使用中客戶反應體驗不佳。隨著市場變革和使用者體驗重要性的提升，我們決定進行系統優化和流程改善，以提供更直覺且易於辨識的使用者界面
+                </p>
+                <ul class="ui-research-content-list">
+                  <li>客戶使用多年，反應體驗不便</li>
+                  <li>客戶建議作為主要改進動機</li>
+                  <li>目標確保系統符合現代使用者期望</li>
+                  <li>提高使用者對系統的使用意願</li>
+                </ul>
+              </li>
+              <li>
+                <h5>設計目標</h5>
+                <p>
+                  ERMA舊版系統存在擁擠、資訊過多的問題，雖然符合UX所說的減少Click的原則，但同時也引發使用者混亂。基於使用者回饋經驗，我們重新設計，將繁複的資訊步驟化，減少選項，提高系統直覺性，避免使用者混亂
+                </p>
+                <ul class="ui-research-content-list">
+                  <li>舊版面擁擠，資訊一次塞給使用者</li>
+                  <li>符合UX原則，減少Click動作，但引發資訊過多問題</li>
+                  <li>
+                    重新設計考量使用者回饋，將資訊步驟化，簡化選項，提高系統直覺性
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="ui-research"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ui-view-userReviews">
+        <div class="ui-userReviews-block">
+          <h4>用戶評論<br /><span>User Reviews</span></h4>
+          <div class="ui-userReviews-content">
+            <ul>
+              <li>
+                <h5>我們的客戶使用後體驗與反饋</h5>
+              </li>
+            </ul>
+            <div class="ui-view-userContent">
+              <div class="ui-view-users ui-view-users-right">
+                <div class="ui-view-users-descraption">
+                  <h5>要提New request但是一直卡關</h5>
+                  <p>
+                    產品遇到問題要送修機器，要提New
+                    request，但不直覺，而且第一步驟應該要輸入Serial
+                    Number，但是他放在畫面的下層。而且輸入完Serial
+                    Number，第一時間會不知道後面還要按按鈕，去填寫維修的原因。
+                  </p>
+                </div>
+                <img src="../image/user/Rectangle.png" alt="" />
+              </div>
+              <div class="ui-view-users ui-view-users-left">
+                <img src="../image/user/Rectangle3.png" alt="" />
+                <div class="ui-view-users-descraption">
+                  <h5>需要填的沒填到，不需要填的反而輸入</h5>
+                  <p>
+                    填寫基本資料，使用者還要知道自己是一般保固還是全保的，因為全部的欄位都開放給使用者填寫，但是非全保的就不需要多填寫部分欄位。
+                  </p>
+                </div>
+              </div>
+              <div class="ui-view-users ui-view-users-right">
+                <div
+                  class="ui-view-users-descraption ui-view-users-descraption-important"
+                >
+                  <h5>版面資訊太多且複雜</h5>
+                  <p>
+                    介面上雖然是希望越少click的動作，但可以做更多是最好的，但在我們最常用的new
+                    request，卻造成了資訊量過多，太多的選擇項目，版面變複雜，使得使用者會混亂的情況。
+                  </p>
+                </div>
+                <img src="../image/user/Rectangle2.png" alt="" />
+              </div>
+              <div class="ui-view-users ui-view-users-left">
+                <img src="../image/user/Rectangle4.png" alt="" />
+                <div class="ui-view-users-descraption">
+                  <h5>資訊內容雜亂，標題與語意不夠清楚</h5>
+                  <p>
+                    版面上有多個不同的Query(Part's Query、Warranty Query、Status
+                    Query)，分散在各個地方，混亂使用者的視覺與功能使用，而且很多的語意不清楚。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui-view-design">
+        <div class="ui-design-block">
+          <h4>重新設計方向</h4>
+          <div class="ui-design-content">
+            <h4>透過四大設計原則優化介面</h4>
+            <ul>
+              <li>
+                <h5>區塊</h5>
+                <p>
+                  重新組織介面，透過區塊化介面，提升系統結構清晰度，讓使用者能夠迅速理解和導覽系統。
+                </p>
+              </li>
+              <li>
+                <h5>歸類</h5>
+                <p>
+                  強調統一操作方式，以減少使用者的學習成本，創造一致的使用體驗，提高使用者的操作效率。
+                </p>
+              </li>
+              <li>
+                <h5>留白</h5>
+                <p>
+                  運用留白，以突顯主要內容，降低視覺混亂，提供更為輕鬆的使用環境。
+                </p>
+              </li>
+              <li>
+                <h5>聚焦</h5>
+                <p>
+                  採用步驟化方式呈現功能，減少界面的干擾，增加使用者的專注度，提升操作的順暢感。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ui-view-colorScheme">
+        <div class="ui-colorScheme-block">
+          <h4>色彩計畫</h4>
+          <div class="ui-colorScheme-content">
+            <div class="ui-colorScheme-first ui-colorScheme-areas">
+              <h5>主要色彩</h5>
+              <ul></ul>
+            </div>
+            <div class="ui-colorScheme-secound ui-colorScheme-areas">
+              <h5>次要色彩</h5>
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui-view-focus ui-view-focus-half">
+        <div class="ui-focus-block">
+          <h4>設計重點</h4>
+          <div class="ui-focus-content">
+            <ul>
+              <!--  -->
+              <li>
+                <h5>登入頁面 Login</h5>
+                <div class="ui-focus-content-redesign">
+                  <div class="ui-focus-images ui-focus-old">
+                    <p>
+                      <span>#Before</span>
+                      舊的Login畫面，很多資訊都塞在一起
+                    </p>
+                    <h6>#Before</h6>
+                    <img src="../image/before&after/1-0.Sign In-before.png" alt="" />
+                  </div>
+                  <div class="ui-focus-images ui-focus-new">
+                    <p>
+                      <span>#After</span>
+                      新的用頁籤的切換方式呈現，避免造成混亂
+                    </p>
+                    <h6>#After</h6>
+                    <img src="../image/before&after/1-0.Sign In-after.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ui-focus-content-redesign">
+                  <div class="ui-focus-images ui-focus-old">
+                  </div>
+                  <div class="ui-focus-images ui-focus-new">
+                    <h6>#After</h6>
+                    <img src="../image/before&after/1-1.Global Service-after.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ui-focus-content-redesign">
+                  <div class="ui-focus-images ui-focus-old">
+                    <h6>#Before</h6>
+                    <img src="../image/before&after/1-0.Sign In-before warranty Check.png" alt="" />
+                  </div>
+                  <div class="ui-focus-images ui-focus-new">
+                    <h6>#After</h6>
+                    <img src="../image/before&after/1-2Warranty Status-結果-after.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ui-focus-content-redesign">
+                  <div class="ui-focus-images ui-focus-old">
+                  </div>
+                  <div class="ui-focus-images ui-focus-new">
+                    <h6>#After</h6>
+                    <img src="../image/before&after/1-3.Repair Status-現在進度-after.png" alt="" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ui-wait">未完待續．．．</div>
+        </div>
+      </div>
+      <div class="ui-view-prototype">
+        <div class="ui-focus-block">
+          <h4>Wireframe</h4>
+          <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuCfiiO5SL0hXxwSZYlFBBk%2FAlex-portfolio%3Fpage-id%3D4%253A50%26node-id%3D6%253A51%26viewport%3D1130%252C744%252C0.75%26scaling%3Dscale-down%26starting-point-node-id%3D6%253A51" allowfullscreen></iframe> -->
+          <div class="ui-prototype-block">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7YEEM3sH4W54xivPBu27v4%2FRMA%3Fpage-id%3D0%253A1%26node-id%3D362-3174%26scaling%3Dcontain%26starting-point-node-id%3D1%253A4%26mode%3Ddesign%26t%3DL7cnVE6RLueVEaru-1" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/uiViewPage.js"></script>
+    <script>
+      const mailColor = ["#496FF2", "#F96C4D"];
+      const secoundColor = [
+      "#F1F3FF",
+      "#F4F4F6",
+      "#4F4F4F",
+      "#1C218C"
+
+      ];
+
+      for (var i = 0; i < mailColor.length; i++) {
+        repeatColor("ui-colorScheme-first", mailColor[i]);
+      }
+      for (var i = 0; i < secoundColor.length; i++) {
+        repeatColor("ui-colorScheme-secound", secoundColor[i]);
+      }
+
+      function repeatColor(className, Color) {
+        let divClass = `<li><div class="ui-colorScheme-shapes" style="background:${Color};"></div></li>`;
+        $(`.ui-colorScheme-block ${"." + className} ul`).append(divClass);
+      }
+    </script>
+  </body>
+</html>
