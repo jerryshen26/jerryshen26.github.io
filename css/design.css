@@ -102,7 +102,7 @@ body {
     z-index: 99;
 }
 
-.portfolio-develop-area h4 {
+.portfolio-develop-area h4,.portfolio-graphicDesign-area h4 {
     font-size: 34px;
     font-weight: normal;
     padding: 5px 2px;
@@ -340,7 +340,7 @@ body {
 }
 
 .portfolio-prototype-card {
-    width: 27%;
+    width: 22%;
     margin-right: 3%;
     margin-bottom: 3%;
     display: inline-block;
@@ -382,7 +382,28 @@ body {
 }
 
 .portfolio-prototype-text {
-    padding: 15px 20px 30px;
+    padding: 15px 20px 20px;
+}
+
+.portfolio-prototype-project{
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.25s;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.portfolio-prototype-project:hover{
+    background: #353535;
+}
+
+
+.portfolio-prototype-project a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
 }
 
 .portfolio-prototype-text h5 {
@@ -393,6 +414,11 @@ body {
 
 .portfolio-prototype-text p {
     font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical    
 }
 
 
