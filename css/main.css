@@ -537,17 +537,22 @@ progress{
         width: 130%;
         display: table;
         overflow: auto;
-        background: #ffffffb8;
+        background: transparent;
         box-sizing: border-box;
         padding: 0 5%;
     }
+    .portfolio-list .portfolio-list-ul-background{
+        background: #ffffffe8;
+    }
+
     .portfolio-list ul li{
         display: table-cell;
         margin-right: 50px;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
     .portfolio-banner-area{
-        height: 100vh;
+        height: 150vh;
     }
 
     .portfolio-resume-area .resumeSection{

@@ -147,6 +147,20 @@ window.onload = function () {
         var data = $(this).data("item");
         changePhotoImage(data, this);
     });
+
+    $(window).scroll(function () {
+        if (winWidth >= 500)
+            return
+        else {
+           const area1BannerH =  $(".portfolio-banner-area").height();
+           if($(window).scrollTop()>10){
+            $(".portfolio-list ul").addClass("portfolio-list-ul-background");
+           }else{
+            $(".portfolio-list ul").removeClass("portfolio-list-ul-background");
+           }
+        }
+
+    })
 }
 
 function fabClickFun() {
