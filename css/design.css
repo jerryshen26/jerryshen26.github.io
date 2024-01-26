@@ -385,21 +385,29 @@ body {
     padding: 15px 20px 20px;
 }
 
-.portfolio-prototype-project{
+.portfolio-prototype-projects{
     text-align: center;
     padding: 3px;
     box-sizing: border-box;
     font-size: 14px;
-    transition: all 0.25s;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.portfolio-prototype-project:hover{
-    background: #353535;
+.portfolio-prototype-project{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.portfolio-prototype-website{
+    background-image: linear-gradient(135deg, #f72a50 0%, #cd3433 100%);
+    
+}
+
+.portfolio-prototype-projects:hover{
+    background-image: linear-gradient(135deg, #565656 0%, #313131 100%);
 }
 
 
-.portfolio-prototype-project a{
+.portfolio-prototype-projects a{
     text-decoration: none;
     color: #fff;
     display: block;
