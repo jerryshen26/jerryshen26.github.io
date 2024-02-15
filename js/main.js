@@ -82,10 +82,8 @@ window.onload = function () {
                 for (key in graphicSectionIds) {
                     var keyDiv = document.getElementById(key);
                     var computedStyle = document.defaultView.getComputedStyle(keyDiv, null);
-                    var endGraphicHeight = graphicSectionIds["graphicDesign1"] + graphicArea;
+                    var endGraphicHeight = graphicSectionIds["graphicDesign1"] + graphicArea - 50;
                     var color = computedStyle.color;
-
-
                     if (scrolled >= graphicSectionIds[key]) {
                         if (scrolled > endGraphicHeight) {
                             $(".portfolio-banner-background").css("background", "");
@@ -126,7 +124,7 @@ window.onload = function () {
         var name = $(this).attr('data-id');
         var id = "#" + name;
         var top = $(id).first().offset().top;
-        $('html, body').animate({ scrollTop: top + 'px' }, 100, null, function () {
+        $('html, body').animate({ scrollTop: top + 'px' }, 500, null, function () {
             checkClick = true;
         });
     });
