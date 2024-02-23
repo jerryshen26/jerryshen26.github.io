@@ -605,4 +605,8 @@ progress{
     .resumeSection .resumeCard{
         padding: 4%;
     }
+
+    .resume-block .resume-timeline li::before{
+        left: -5%;
+    }
 }

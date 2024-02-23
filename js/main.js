@@ -10,6 +10,7 @@ window.onload = function () {
 
     initTyping();
     fabClickFun();
+    sectionIdsFun();
 
     function initTyping() {
         let lineIndex = 0;
@@ -43,23 +44,26 @@ window.onload = function () {
         }, 200);
     }
 
-
-    $(".section").each(function () {
-        var $this = $(this);
-        sectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
-    });
-
-    $(".graphicDesignSection").each(function () {
-        var $this = $(this);
-        graphicSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
-    })
-
-    $(".resumeSection").each(function () {
-        var $this = $(this);
-        resumeSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
-    })
+    function sectionIdsFun(){
+        $(".section").each(function () {
+            var $this = $(this);
+            sectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
+        });
+    
+        $(".graphicDesignSection").each(function () {
+            var $this = $(this);
+            graphicSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
+        })
+    
+        $(".resumeSection").each(function () {
+            var $this = $(this);
+            resumeSectionIds[$this.attr("id")] = Math.ceil($this.first().offset().top) - 5;
+        })
+    }
 
     $(window).scroll(function (evet) {
+        sectionIdsFun();
+
         if (checkClick) {
             var scrolled = $(this).scrollTop();
             var windowHeight = $(window).innerHeight();

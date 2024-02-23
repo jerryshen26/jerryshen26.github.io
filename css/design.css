@@ -354,6 +354,32 @@ body {
 .portfolio-prototype-card:hover {
     box-shadow: 0 0 5px #00a2ff88;
 }
+.portfolio-prototype-card:hover .portfolio-prototype-header-block a{
+    animation: headerImageAnimation 0.7s  2;
+}
+
+@keyframes headerImageAnimation {
+    0%{
+        transform: skew(0deg, 0deg);
+    }
+    20%{
+        transform: skew(-5deg, -5deg);
+    }
+    38%{
+        transform: skew(5deg, 5deg);
+    }
+
+    56%{
+        transform: skew(-5deg, -5deg);
+    }
+    74%{
+        transform: skew(5deg, 5deg);
+    }
+
+    100%{
+        transform: skew(0deg, 0deg);
+    }
+}
 
 .portfolio-prototype-card img {
     width: 100%;
@@ -610,12 +636,18 @@ body {
 }
 
 @media screen and (max-width:500px) {
+    body{
+        min-width: auto;
+    }
     .portfolio-menu {
         width: 100%;
         height: auto;
         box-sizing: border-box;
         padding: 0;
         z-index: 100;
+        min-width: auto;
+        max-width: none;
+
     }
     .portfolio-list {
         width: 100%;
@@ -624,6 +656,7 @@ body {
         padding: 0;
         background: #4fa0bb;
         overflow: auto;
+
     }
     .portfolio-list ul {
         width: 150%;
@@ -655,5 +688,50 @@ body {
     }
     .portfolio-develop-card {
         display: block;
+        width: 100%;
+        height: 25vh;
     }
+    .portfolio-prototype-card {
+        width: 100%;
+    }
+
+    .portfolio-prototype-area{
+        padding: 100px 0;
+    }
+
+    .portfolio-prototype-area,.portfolio-develop-area{
+        left: 0;
+        right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    .portfolio-graphicDesign-area,.portfolio-edmDesign-area{
+        width: 100%;
+        left: 0;
+    }
+    .portfolio-graphicDesign-descraption{
+        width: 100%;
+    }
+    .portfolio-menu .fabb.active{
+        transform: scale(1);
+    }
+
+    .portfolio-graphicDesign-areas{
+        height: 50vh;
+    }
+    .portfolio-prototype-menu{
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .portfolio-prototype-area .portfolio-prototype-menu li{
+        font-size: 14px;
+    }
+
+    .portfolio-edmDesign-area .edmDesign-li{
+
+    }
+    
 }
