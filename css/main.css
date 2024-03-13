@@ -336,8 +336,20 @@ body {
     line-height: 45px;
 }
 
+.resume-block li .resume-Company{
+    font-size: 20px;
+}
+
+
 .resume-timeline li.resume-before .resume-Title{
     font-size: 20px;
+}
+
+.resume-block li .resume-hint img{
+    width: 16px;
+    height: 16px;
+    padding-top: 1px;
+    box-sizing: border-box;
 }
 
 .resume-block li .resume-date{
