@@ -640,29 +640,34 @@ body {
         min-width: auto;
     }
     .portfolio-menu {
-        width: 100%;
+        width: 90%;
         height: auto;
         box-sizing: border-box;
         padding: 0;
         z-index: 100;
         min-width: auto;
         max-width: none;
-
+        top: 88vh;
+        border-radius: 30px;
+        right: 0;
+        left: 0;
+        margin: auto;
     }
     .portfolio-list {
         width: 100%;
         height: auto;
         margin: auto;
         padding: 0;
-        background: #4fa0bb;
+        background: #ffffffe9;
         overflow: auto;
+        display: flex;
+        align-items: baseline;
 
     }
     .portfolio-list ul {
         width: 150%;
         display: table;
         overflow: auto;
-        background: #4fa0bb;
         box-sizing: border-box;
         padding: 0 5%;
     }
@@ -672,7 +677,6 @@ body {
         display: inline-table;
     }
     .portfolio-content {
-        background: #4fa0bb;
         padding: 1.5% 5% 0;
         box-sizing: border-box;
         display: inline-table;

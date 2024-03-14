@@ -234,6 +234,8 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
+    width: 100vw;
+    overflow: auto;
 }
 
 
@@ -532,11 +534,16 @@ progress{
         left: 0;
     }
     .portfolio-menu{
-        width: 100%;
+        width: 90%;
         height: auto;
         box-sizing: border-box;
         padding: 0;
         z-index: 100;
+        top: 90vh;
+        border-radius: 20px;
+        margin: auto;
+        right: 0;
+        left: 0;
     }
     .portfolio-list{
         width: 100%;
@@ -549,7 +556,7 @@ progress{
         width: 130%;
         display: table;
         overflow: auto;
-        background: transparent;
+        background: #ffffffdb;
         box-sizing: border-box;
         padding: 0 5%;
     }
