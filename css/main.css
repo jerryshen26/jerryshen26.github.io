@@ -551,6 +551,7 @@ progress{
         margin: auto;
         padding: 0;
         overflow: auto;
+        border: none;
     }
     .portfolio-list ul{
         width: 130%;
@@ -569,6 +570,7 @@ progress{
         margin-right: 50px;
         margin-bottom: 20px;
         margin-top: 20px;
+        color: black;
     }
     .portfolio-banner-area{
         height: 150vh;

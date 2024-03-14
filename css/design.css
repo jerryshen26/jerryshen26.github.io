@@ -661,7 +661,8 @@ body {
         background: #ffffffe9;
         overflow: auto;
         display: flex;
-        align-items: baseline;
+        align-items: center;
+        border: none;
 
     }
     .portfolio-list ul {
@@ -674,12 +675,12 @@ body {
     .portfolio-menu-content {
         width: 65%;
         overflow: auto;
-        display: inline-table;
+
     }
     .portfolio-content {
         padding: 1.5% 5% 0;
         box-sizing: border-box;
-        display: inline-table;
+
     }
     .portfolio-list ul li {
         display: table-cell;
